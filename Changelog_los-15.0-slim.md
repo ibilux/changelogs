@@ -4,6 +4,7 @@ Lineage eXTenDed Kernel los-15.0-slim source Changelog:
 12-28-2017
 ====================
 
+* [3b18f42 Fix code errors detected using Linaro GCC 6.1.1-rc1](https://github.com/ppajda/kernel_g3/search?q=Fix%20code%20errors%20detected%20using%20Linaro%20GCC%206.1.1-rc1&type=Commits)
 * [2d26e19 defconfigs: Reduce scheduler tick rate to 100 Hz](https://github.com/ppajda/kernel_g3/search?q=defconfigs%3A%20Reduce%20scheduler%20tick%20rate%20to%20100%20Hz&type=Commits)
 
 ***
