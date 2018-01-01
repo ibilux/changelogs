@@ -1,14 +1,32 @@
 Lineage eXTenDed Kernel los-15.0 source Changelog:
 ============================================================
 
-12-26-2017
+12-31-2017
+====================
+
+* [bfc6d3f defconfigs: cleanup](https://github.com/ppajda/kernel_g3/search?q=defconfigs%3A%20cleanup&type=Commits)
+* [6f56d18 mmc: convert to idr_alloc()](https://github.com/ppajda/kernel_g3/search?q=mmc%3A%20convert%20to%20idr_alloc%28%29&type=Commits)
+* [d6b4c17 inotify: convert to idr_alloc()](https://github.com/ppajda/kernel_g3/search?q=inotify%3A%20convert%20to%20idr_alloc%28%29&type=Commits)
+* [1eb01a7 ocmem_sched: convert to idr_alloc()](https://github.com/ppajda/kernel_g3/search?q=ocmem_sched%3A%20convert%20to%20idr_alloc%28%29&type=Commits)
+* [195e0e1 dm: convert to idr_alloc()](https://github.com/ppajda/kernel_g3/search?q=dm%3A%20convert%20to%20idr_alloc%28%29&type=Commits)
+* [a5e3dbc iommu: convert to idr_alloc()](https://github.com/ppajda/kernel_g3/search?q=iommu%3A%20convert%20to%20idr_alloc%28%29&type=Commits)
+* [f1cdd81 iommu: moving initialization earlier](https://github.com/ppajda/kernel_g3/search?q=iommu%3A%20moving%20initialization%20earlier&type=Commits)
+* [31dc443 cgroup: convert to idr_alloc()](https://github.com/ppajda/kernel_g3/search?q=cgroup%3A%20convert%20to%20idr_alloc%28%29&type=Commits)
+* [b16d5ff tune again thermal](https://github.com/ppajda/kernel_g3/search?q=tune%20again%20thermal&type=Commits)
+* [deed607 fs: dynamic fsync: remove powersuspend](https://github.com/ppajda/kernel_g3/search?q=fs%3A%20dynamic%20fsync%3A%20remove%20powersuspend&type=Commits)
+* [a77705b Fix code errors detected using Linaro GCC 6.1.1-rc1](https://github.com/ppajda/kernel_g3/search?q=Fix%20code%20errors%20detected%20using%20Linaro%20GCC%206.1.1-rc1&type=Commits)
+* [0304876 defconfigs: Reduce scheduler tick rate to 100 Hz](https://github.com/ppajda/kernel_g3/search?q=defconfigs%3A%20Reduce%20scheduler%20tick%20rate%20to%20100%20Hz&type=Commits)
+
+***
+
+12-27-2017
 ====================
 
 * [865269e Block: remove iosched_switcher](https://github.com/ppajda/kernel_g3/search?q=Block%3A%20remove%20iosched_switcher&type=Commits)
 
 ***
 
-12-25-2017
+12-26-2017
 ====================
 
 * [d9a6ab9 mdss: kcal: make colors more vivid](https://github.com/ppajda/kernel_g3/search?q=mdss%3A%20kcal%3A%20make%20colors%20more%20vivid&type=Commits)
@@ -22,13 +40,6 @@ Lineage eXTenDed Kernel los-15.0 source Changelog:
 * [71c2693 f_fs: ffs_func_free: cleanup requests allocated by autoconfig](https://github.com/ppajda/kernel_g3/search?q=f_fs%3A%20ffs_func_free%3A%20cleanup%20requests%20allocated%20by%20autoconfig&type=Commits)
 * [69ca9ec usb: gadget: f_fs: Fix enumeration in fullspeed mode](https://github.com/ppajda/kernel_g3/search?q=usb%3A%20gadget%3A%20f_fs%3A%20Fix%20enumeration%20in%20fullspeed%20mode&type=Commits)
 * [586402d usb: gadget: android: Add FunctionFS](https://github.com/ppajda/kernel_g3/search?q=usb%3A%20gadget%3A%20android%3A%20Add%20FunctionFS&type=Commits)
-
-***
-
-12-23-2017
-====================
-
-* [17fc0be Fix for kernel version unavailable in rom info](https://github.com/ppajda/kernel_g3/search?q=Fix%20for%20kernel%20version%20unavailable%20in%20rom%20info&type=Commits)
 
 ***
 

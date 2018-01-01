@@ -1,7 +1,37 @@
 Lineage eXTenDed Kernel los-15.1-slim source Changelog:
 ============================================================
 
-12-25-2017
+12-31-2017
+====================
+
+* [f269dec defconfigs: cleanup](https://github.com/ppajda/kernel_g3/search?q=defconfigs%3A%20cleanup&type=Commits)
+
+***
+
+12-30-2017
+====================
+
+* [9fe5658 mmc: convert to idr_alloc()](https://github.com/ppajda/kernel_g3/search?q=mmc%3A%20convert%20to%20idr_alloc%28%29&type=Commits)
+* [edd763d inotify: convert to idr_alloc()](https://github.com/ppajda/kernel_g3/search?q=inotify%3A%20convert%20to%20idr_alloc%28%29&type=Commits)
+* [2676f39 ocmem_sched: convert to idr_alloc()](https://github.com/ppajda/kernel_g3/search?q=ocmem_sched%3A%20convert%20to%20idr_alloc%28%29&type=Commits)
+* [779262e dm: convert to idr_alloc()](https://github.com/ppajda/kernel_g3/search?q=dm%3A%20convert%20to%20idr_alloc%28%29&type=Commits)
+* [29c0767 iommu: convert to idr_alloc()](https://github.com/ppajda/kernel_g3/search?q=iommu%3A%20convert%20to%20idr_alloc%28%29&type=Commits)
+* [44bbd2f iommu: moving initialization earlier](https://github.com/ppajda/kernel_g3/search?q=iommu%3A%20moving%20initialization%20earlier&type=Commits)
+* [3be7d89 cgroup: convert to idr_alloc()](https://github.com/ppajda/kernel_g3/search?q=cgroup%3A%20convert%20to%20idr_alloc%28%29&type=Commits)
+
+***
+
+12-29-2017
+====================
+
+* [fc4ae4d Fix code errors detected using Linaro GCC 6.1.1-rc1](https://github.com/ppajda/kernel_g3/search?q=Fix%20code%20errors%20detected%20using%20Linaro%20GCC%206.1.1-rc1&type=Commits)
+* [7be968b defconfigs: Reduce scheduler tick rate to 100 Hz](https://github.com/ppajda/kernel_g3/search?q=defconfigs%3A%20Reduce%20scheduler%20tick%20rate%20to%20100%20Hz&type=Commits)
+* [741a656 fs: dynamic fsync: remove powersuspend](https://github.com/ppajda/kernel_g3/search?q=fs%3A%20dynamic%20fsync%3A%20remove%20powersuspend&type=Commits)
+* [2deda70 tune again thermal](https://github.com/ppajda/kernel_g3/search?q=tune%20again%20thermal&type=Commits)
+
+***
+
+12-26-2017
 ====================
 
 * [719d67a mdss: kcal: make colors more vivid](https://github.com/ppajda/kernel_g3/search?q=mdss%3A%20kcal%3A%20make%20colors%20more%20vivid&type=Commits)
@@ -15,24 +45,6 @@ Lineage eXTenDed Kernel los-15.1-slim source Changelog:
 * [58c76fc f_fs: ffs_func_free: cleanup requests allocated by autoconfig](https://github.com/ppajda/kernel_g3/search?q=f_fs%3A%20ffs_func_free%3A%20cleanup%20requests%20allocated%20by%20autoconfig&type=Commits)
 * [70b3016 usb: gadget: f_fs: Fix enumeration in fullspeed mode](https://github.com/ppajda/kernel_g3/search?q=usb%3A%20gadget%3A%20f_fs%3A%20Fix%20enumeration%20in%20fullspeed%20mode&type=Commits)
 * [d4ee6c6 usb: gadget: android: Add FunctionFS](https://github.com/ppajda/kernel_g3/search?q=usb%3A%20gadget%3A%20android%3A%20Add%20FunctionFS&type=Commits)
-
-***
-
-12-23-2017
-====================
-
-* [f528f88 Fix for kernel version unavailable in rom info](https://github.com/ppajda/kernel_g3/search?q=Fix%20for%20kernel%20version%20unavailable%20in%20rom%20info&type=Commits)
-
-***
-
-12-22-2017
-====================
-
-* [b580467 ANDROID: binder: fix compilation warnings.](https://github.com/ppajda/kernel_g3/search?q=ANDROID%3A%20binder%3A%20fix%20compilation%20warnings.&type=Commits)
-* [cb40126 UPSTREAM: drivers: android: correct the size of struct binder_uintptr_t for BC_DEAD_BINDER_DONE](https://github.com/ppajda/kernel_g3/search?q=UPSTREAM%3A%20drivers%3A%20android%3A%20correct%20the%20size%20of%20struct%20binder_uintptr_t%20for%20BC_DEAD_BINDER_DONE&type=Commits)
-* [70a3271 staging: binder: Improve Kconfig entry for ANDROID_BINDER_IPC_32BIT](https://github.com/ppajda/kernel_g3/search?q=staging%3A%20binder%3A%20Improve%20Kconfig%20entry%20for%20ANDROID_BINDER_IPC_32BIT&type=Commits)
-* [20ba299 BACKPORT: ARM: 8091/2: add get_user() support for 8 byte types](https://github.com/ppajda/kernel_g3/search?q=BACKPORT%3A%20ARM%3A%208091/2%3A%20add%20get_user%28%29%20support%20for%208%20byte%20types&type=Commits)
-* [a63ed18  ARM: configs: g3: use 64-bit binder API](https://github.com/ppajda/kernel_g3/search?q=%20ARM%3A%20configs%3A%20g3%3A%20use%2064-bit%20binder%20API&type=Commits)
 
 ***
 
