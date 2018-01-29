@@ -1,1 +1,1 @@
-# changelogs
+# Lineage eXTenDed Kernel changelogs
