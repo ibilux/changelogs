@@ -1,43 +1,27 @@
 Lineage eXTenDed Kernel los-15.1 source Changelog:
 ============================================================
 
-01-29-2018
+02-14-2018
 ====================
 
-* [a12759b usb: gadget: fix build](https://github.com/ppajda/kernel_g3/commit/a12759be1652389aecb8e135e76590d6e959c1e8)
-* [f2a48f4 Revert "usb: gadget: f_hid: fix build error"](https://github.com/ppajda/kernel_g3/commit/f2a48f47427cf6a5b0e871ff92de1dd3a7c74c79)
-* [b870971 defconfig: Disable CONFIG_MSM_SMP2P_TEST](https://github.com/ppajda/kernel_g3/commit/b870971fb6c56e66b18421ef260cc72707c96ca7)
-* [804cb08 defconfig: Disable perf events](https://github.com/ppajda/kernel_g3/commit/804cb08776cd08be891bedf6d55407429dc3bde6)
-* [139039c kgsl: fix derp](https://github.com/ppajda/kernel_g3/commit/139039cb6aa81558f2d3aa508f5b6bea6f799ad4)
-* [c0e227b msm: slimbus: change CLK_GEAR](https://github.com/ppajda/kernel_g3/commit/c0e227b63e926dd09474ab7a605f8beb472f8e3d)
-* [9c9ddd0 msm: kgsl: Reset the bus_mod value when power is re-enabled](https://github.com/ppajda/kernel_g3/commit/9c9ddd0e048ba20891b7ddb749b9f88849ac007f)
-* [7a8e8d2 msm: kgsl: Respect power constraints for a full interval](https://github.com/ppajda/kernel_g3/commit/7a8e8d2370ac3b8482a7a1e23c5dca561efb9a25)
-* [b2530df msm: kgsl: Don't update devfreq if the device is in slumber](https://github.com/ppajda/kernel_g3/commit/b2530df2231306970192d11e4fb96f490d5a10ea)
-* [53fdc55 gpu: msm: Clean up devfreq usage](https://github.com/ppajda/kernel_g3/commit/53fdc553e4e3cb94346c871ba228e265fdde8564)
-* [872a7fe msm: kgsl: Wait for dispatcher on adreno idle](https://github.com/ppajda/kernel_g3/commit/872a7fecdfd9cbf33c79c18b84758d6e6a357634)
-* [e563e70 msm: kgsl: Only check GPU hardware idle while bootstrapping](https://github.com/ppajda/kernel_g3/commit/e563e706ba237e08c212bfcca1462b87c07514e1)
-* [20e8fac msm: kgsl: Add spin wait for the GPU to idle](https://github.com/ppajda/kernel_g3/commit/20e8facf2d568cd2d1a8135660a2cf56a8f19f24)
-* [d80b123 msm: kgsl: Don't block on the dispatcher mutex in issuecmds](https://github.com/ppajda/kernel_g3/commit/d80b123b007f00e807dcc4ef06b127739ad72739)
-* [615207a kgsl: fix build error](https://github.com/ppajda/kernel_g3/commit/615207ad14a07f14c217bbaf9c8b9e62802931c4)
-* [96683e9 gpu: fix build](https://github.com/ppajda/kernel_g3/commit/96683e92b31e6a3d16957cc16f0a61d91214a0d2)
-* [3dbae6d msm: kgsl: Get rid of KGSL_FLAGS_STARTED](https://github.com/ppajda/kernel_g3/commit/3dbae6d8a1810cfb4de01132eb2558698a2eec98)
-* [a0bcb01 msm: kgsl: Clear pending transactions from VBIF on hang](https://github.com/ppajda/kernel_g3/commit/a0bcb01459a2d5c8442733410df6acbd0d1cd4ec)
-* [d200244 msm: kgsl: Modify which MMU clocks are enabled/disabled](https://github.com/ppajda/kernel_g3/commit/d20024433138663bba10cf5c6c2713661912b06c)
-* [8523b48 msm: kgsl: Fix nice level for higher priority GPU start thread](https://github.com/ppajda/kernel_g3/commit/8523b485ea68835b35f898bff5633fc6326496e3)
-* [98641e0 msm: kgsl: Fix memory entry leak when calling adreno_convertaddr](https://github.com/ppajda/kernel_g3/commit/98641e03a005e9472cd794b2f696a5a29ee8c589)
-* [2776d90 msm: kgsl: Configure FT behaviour from sysfs instead of debugfs](https://github.com/ppajda/kernel_g3/commit/2776d909218ed2227546bf394e0b2a88da219c9c)
-* [987b77c msm: kgsl: Wake gpu up on the max freq when using the performance governor](https://github.com/ppajda/kernel_g3/commit/987b77cd6aeb0a95ba2e984abd5a6ae5197a38aa)
-* [f8a6c52 msm: kgsl: Replace jiffy sampling with usec](https://github.com/ppajda/kernel_g3/commit/f8a6c5258566deab663f4b4b17a6e8fe11d01528)
-* [6912d42 msm: kgsl: set the profile max_state correctly](https://github.com/ppajda/kernel_g3/commit/6912d423dc24ff4c5c54481982237e0d6befa8bc)
-* [0911835 msm: kgsl: Delay the first devfreq status read](https://github.com/ppajda/kernel_g3/commit/0911835ec12ad101f7cf79fd6f301aa9660c8085)
-* [bb4afcf gpu: fix typo](https://github.com/ppajda/kernel_g3/commit/bb4afcf4a4c6fa0b6011770a1d49545b0570f6d8)
-* [c1e1cac msm: vidc: Protect debug_buffer access in core_info_read with lock.](https://github.com/ppajda/kernel_g3/commit/c1e1cac8dbd773c2a435ba86e60b8f262473025e)
-* [b4c982a msm: vidc: Update QoS latency for msm8974 Change-Id: I5eaaf0315b807dc444e024d4e2115794d4844962](https://github.com/ppajda/kernel_g3/commit/b4c982a37d5478c641b419e8b9bc13841f74ac73)
-* [0f9064f msm: vidc: making qos_request variable per instance](https://github.com/ppajda/kernel_g3/commit/0f9064f88ab8b469edca970cbf9ad8b2d092e90b)
-* [863fee3 msm: kgsl: Update event workqueue as a high priority thread](https://github.com/ppajda/kernel_g3/commit/863fee3580a38cc99ab96f7a4f229a8e7c1b9934)
-* [05a2f3c kgsl: Increase priority of RT thread](https://github.com/ppajda/kernel_g3/commit/05a2f3ce249604478ac9d96e48082e1989cb7e15)
-* [c1ff81c msm: kgsl: Prevent adreno stop after gpu is power collapsed](https://github.com/ppajda/kernel_g3/commit/c1ff81ccceb657056f6583e96ac88b6b69513bc2)
-* [2137300 msm: kgsl: remove or fix badly formated printk messages](https://github.com/ppajda/kernel_g3/commit/21373007a914f411fcbf34653de1bb28a6a02a54)
+* [776da8e Up version R5](https://github.com/ppajda/kernel_g3/commit/776da8e69862dcd6d50d1c155557360604823c5f)
+* [794e14d kgsl: fix derp](https://github.com/ppajda/kernel_g3/commit/794e14da2a9b72929a20cfd57fec12e39ce74d0d)
+* [884ec74 proc: modify cmdline to export correct charger mode](https://github.com/ppajda/kernel_g3/commit/884ec74931fd671afcaffa130b6893ddfbbc86ab)
+* [43d582c ANDROID: xattr: Pass EOPNOTSUPP to permission2](https://github.com/ppajda/kernel_g3/commit/43d582c92b582425c3a8844ada195437b3633886)
+* [7dd1b79 Enable setting security contexts on rootfs inodes.](https://github.com/ppajda/kernel_g3/commit/7dd1b796c7d544927c1052a617d95be613a93dcf)
+* [87253b3 selinux: enable genfscon labeling for sysfs and pstore files](https://github.com/ppajda/kernel_g3/commit/87253b3e0f0da3bac258e8f0e9359fae06f5323e)
+* [6ae202b selinux: enable per-file labeling for debugfs files.](https://github.com/ppajda/kernel_g3/commit/6ae202b0910bdec88f9ecef69b9e9d8dff248aff)
+* [47a196d defconfigs: cleanup](https://github.com/ppajda/kernel_g3/commit/47a196df5dce798102b6ab8f75162969a30ab1df)
+* [95bbfd1 usb: gadget: fix build](https://github.com/ppajda/kernel_g3/commit/95bbfd1af182ce5e0283830ce6f7c8b6abcfed82)
+* [bc0e549 Revert "usb: gadget: f_hid: fix build error"](https://github.com/ppajda/kernel_g3/commit/bc0e549fa20af39ff671b2f98dc7d2e75925d289)
+* [a6ae7e0 defconfig: Disable CONFIG_MSM_SMP2P_TEST](https://github.com/ppajda/kernel_g3/commit/a6ae7e0ffa839164ac8004cd265fc7ffe6fc20d2)
+* [6ab8067 defconfig: Disable perf events](https://github.com/ppajda/kernel_g3/commit/6ab8067d97804af02550670318b06f71102280ed)
+
+***
+
+01-30-2018
+====================
+
 * [85facad kgsl: fix derp](https://github.com/ppajda/kernel_g3/commit/85facad937e4574f4eeddf7eac7b2401f0ca6453)
 * [6beca95 include: Include dummy MSM Audio Calibration header * This needs to be included in apq8084/msm8974 kernel's exported headers to build the msm audio hal as of oreo-mr1. * Demon000 deserves credit for the initial idea behind this commit, as he pointed out which structs were used.](https://github.com/ppajda/kernel_g3/commit/6beca95b8678b4b0cc2ac0ee8267d9c130312a9a)
 * [58745d7 ANDROID: binder: fix OOB write in __binder_update_page_range](https://github.com/ppajda/kernel_g3/commit/58745d7ad18d094eb0e317ce8d585af1a3d1b222)
@@ -55,10 +39,15 @@ Lineage eXTenDed Kernel los-15.1 source Changelog:
 
 ***
 
+01-24-2018
+====================
+
+
+***
+
 01-23-2018
 ====================
 
-* [0a5bcdf defconfig: update bcmdhd paths](https://github.com/ppajda/kernel_g3/commit/0a5bcdf94f03cdd1f7929604aa77a71c96013c19)
 * [193422b BACKPORT: ARM: dts: msm: Mount the system partition during early init](https://github.com/ppajda/kernel_g3/commit/193422b5cacef6d9ac16ddcb64bac8100b60737d)
 
 ***
@@ -133,7 +122,7 @@ Lineage eXTenDed Kernel los-15.1 source Changelog:
 
 ***
 
-12-21-2017
+12-22-2017
 ====================
 
 * [fd25c11 workqueue: fix derp](https://github.com/ppajda/kernel_g3/commit/fd25c11e6d6a5ac162814a7c05224257b232ac73)
@@ -194,7 +183,12 @@ Lineage eXTenDed Kernel los-15.1 source Changelog:
 * [d7fcab7 workqueue: restore CPU affinity of unbound workers on CPU_ONLINE](https://github.com/ppajda/kernel_g3/commit/d7fcab7cc2fb20b635379d515117fbdef9f743cb)
 * [a6f8028 workqueue: directly restore CPU affinity of workers from CPU_ONLINE](https://github.com/ppajda/kernel_g3/commit/a6f8028f6c8da1ade89590bc176d7eb55d8e2c7b)
 * [e3fe434 workqueue: relocate rebind_workers()](https://github.com/ppajda/kernel_g3/commit/e3fe4341086d76315d9c04357a2d069d60f05267)
-* [444e2a1 workqueue: convert worker_pool->worker_ida to idr and implement for_each_pool_worker()](https://github.com/ppajda/kernel_g3/commit/444e2a10134cd7034be1a5fe8dcc196fff7669de)
+
+***
+
+12-21-2017
+====================
+
 * [52d51cc kgsl: convert to idr_alloc()](https://github.com/ppajda/kernel_g3/commit/52d51ccc0f7deb60d08017e4a72fbfc849dc5a5c)
 * [e9e1d5e ion: remove deprecated idr_](https://github.com/ppajda/kernel_g3/commit/e9e1d5e1c84ddc2a9ffe63bc86994b6bf534b334)
 * [f8ccb29 gpio: convert to idr_alloc()](https://github.com/ppajda/kernel_g3/commit/f8ccb29ce2e7b2b1a5b04190ed0472bd61275a41)
@@ -222,12 +216,7 @@ Lineage eXTenDed Kernel los-15.1 source Changelog:
 * [914be51 idr: remove length restriction from idr_layer->bitmap](https://github.com/ppajda/kernel_g3/commit/914be51013d96c86607873a4e04a9b9e933d0329)
 * [d42e47a idr: remove MAX_IDR_MASK and move left MAX_IDR_* into idr.c](https://github.com/ppajda/kernel_g3/commit/d42e47a38517e6072908889ddf738685feab19da)
 * [60df39e Remove deprecated idr_remove_all and fix derps](https://github.com/ppajda/kernel_g3/commit/60df39eff04aaa91360dcaaf37394243dc8cdae8)
-
-***
-
-12-20-2017
-====================
-
+* [d446e5a idr: rename MAX_LEVEL to MAX_IDR_LEVEL](https://github.com/ppajda/kernel_g3/commit/d446e5abee41fcf677f8748d1832c1d83fdea9df)
 * [302b8f1 idr: fix top layer handling](https://github.com/ppajda/kernel_g3/commit/302b8f139dfbece91c6c2b95c8320d15c144d13b)
 * [f61903b idr: implement idr_preload[_end]() and idr_alloc()](https://github.com/ppajda/kernel_g3/commit/f61903bd5d1d399262a8d087003455ac7ba27b08)
 * [0e617e8 idr: refactor idr_get_new_above()](https://github.com/ppajda/kernel_g3/commit/0e617e8efbca99b47a45b16d1d6ab40ddc4c6c96)
@@ -290,7 +279,7 @@ Lineage eXTenDed Kernel los-15.1 source Changelog:
 
 ***
 
-12-19-2017
+12-20-2017
 ====================
 
 * [3ea36d0 workqueue: un-GPL function delayed_work_timer_fn()](https://github.com/ppajda/kernel_g3/commit/3ea36d065f9f4395a87d8b501d2cf6774da3a5f4)
@@ -350,7 +339,12 @@ Lineage eXTenDed Kernel los-15.1 source Changelog:
 * [b696ea4 workqueue: restore POOL_MANAGING_WORKERS](https://github.com/ppajda/kernel_g3/commit/b696ea45c53329a3b8162f7e0c1fd13b47d12dc3)
 * [1d01a57 workqueue: fix possible deadlock in idle worker rebinding](https://github.com/ppajda/kernel_g3/commit/1d01a57c0491fb3313eab4b755aad5883fc75116)
 * [0d928ab workqueue: move WORKER_REBIND clearing in rebind_workers() to the end of the function](https://github.com/ppajda/kernel_g3/commit/0d928ab0b41f3405ebbc7bf9f806178370b54b79)
-* [8ae2830 workqueue: UNBOUND -> REBIND morphing in rebind_workers() should be atomic](https://github.com/ppajda/kernel_g3/commit/8ae2830df24f1d0cf22db53ee949bc7208b6e189)
+
+***
+
+12-19-2017
+====================
+
 * [b365f61 rename deprecated __cancel_delayed_work to cancel_delayed_work](https://github.com/ppajda/kernel_g3/commit/b365f613ef45b6e3952b8ac0b3893a113dab5f6f)
 * [c521e6c workqueue: introduce WORK_OFFQ_CPU_NONE](https://github.com/ppajda/kernel_g3/commit/c521e6c47e3408d4f3b287a4cdd02e09472d7044)
 * [acde4f1 workqueue: unexport work_cpu()](https://github.com/ppajda/kernel_g3/commit/acde4f1c4a0f020ce3c08ed270acbc8965a16bec)
@@ -367,12 +361,7 @@ Lineage eXTenDed Kernel los-15.1 source Changelog:
 * [ec64c88 timers: Create detach_if_pending() and use it](https://github.com/ppajda/kernel_g3/commit/ec64c88c78b5ccc360732939c86cd8756eb9240e)
 * [e390ab5 lockdep: fix oops in processing workqueue](https://github.com/ppajda/kernel_g3/commit/e390ab545af029b79999bc733345598c8af21a32)
 * [b2eb2b6 workqueue: clean up delayed_work initializers and add missing one](https://github.com/ppajda/kernel_g3/commit/b2eb2b62d2ac4a0d1b9159f01bcabe25b58be0e7)
-
-***
-
-12-18-2017
-====================
-
+* [5ed4473 workqueue: make deferrable delayed_work initializer names consistent](https://github.com/ppajda/kernel_g3/commit/5ed44735cfc5d83f20a692d144c5a33be2d60a06)
 * [1521342 workqueue: deprecate system_nrt[_freezable]_wq](https://github.com/ppajda/kernel_g3/commit/1521342b03cd6f7459cc92aecfa38de87d5d259d)
 * [2f9b2ee workqueue: deprecate flush[_delayed]_work_sync()](https://github.com/ppajda/kernel_g3/commit/2f9b2ee55aeeb0a09558f0340c0f303e0f14ee30)
 * [3383324 sched/core: Fix a race between try_to_wake_up() and a woken up task](https://github.com/ppajda/kernel_g3/commit/33833243edc778302926e24fdc42d8c9fac4cb48)
@@ -391,10 +380,15 @@ Lineage eXTenDed Kernel los-15.1 source Changelog:
 
 ***
 
+12-16-2017
+====================
+
+
+***
+
 12-15-2017
 ====================
 
-* [cebc3e0 fixes some errors](https://github.com/ppajda/kernel_g3/commit/cebc3e0a1ef9b00ffaa14cdc342d20b31650e44e)
 * [49eea1f ANDROID: binder: fix compilation warnings.](https://github.com/ppajda/kernel_g3/commit/49eea1f78b51ac3e8218504dc717a56b2a5d8c8f)
 * [967637c UPSTREAM: drivers: android: correct the size of struct binder_uintptr_t for BC_DEAD_BINDER_DONE](https://github.com/ppajda/kernel_g3/commit/967637c3cb1be568809c03169aa23d620e86fee3)
 * [b59ab5e staging: binder: Improve Kconfig entry for ANDROID_BINDER_IPC_32BIT](https://github.com/ppajda/kernel_g3/commit/b59ab5e83a192c3802ad6b60cf48706027c40816)
@@ -402,17 +396,17 @@ Lineage eXTenDed Kernel los-15.1 source Changelog:
 
 ***
 
-12-13-2017
+12-14-2017
 ====================
 
 * [711f9b8 dts: msm8974.dtsi: tune thermal](https://github.com/ppajda/kernel_g3/commit/711f9b88bdd889b56de4d535a93e36d51de2f4da)
-* [07e4b8e replace deprecated create_singlethread_workqueue with schedule_work](https://github.com/ppajda/kernel_g3/commit/07e4b8e79de74a45e8592d16c01bcdb5b1b47885)
 
 ***
 
-12-12-2017
+12-13-2017
 ====================
 
+* [3fb3048 msm: kgsl: Remove io_fraction as it is no longer used](https://github.com/ppajda/kernel_g3/commit/3fb30482c14e3389e89b80a901e5b27be89137e8)
 * [6133243 msm8974pro.dtsi: change initial power level](https://github.com/ppajda/kernel_g3/commit/61332436353e6cef34729a73c1418370d71ce7d7)
 * [1859328 msm8974pro: regulator: adjust GFX regulator parameters](https://github.com/ppajda/kernel_g3/commit/1859328e7e861db5ba6540057837574edf12fb4a)
 * [0a1d984 ALSA: seq: Fix use-after-free at creating a port](https://github.com/ppajda/kernel_g3/commit/0a1d984e525870bb75e80d3d9edb955d7b4fa352)
@@ -560,7 +554,12 @@ Lineage eXTenDed Kernel los-15.1 source Changelog:
 * [e2ea03d brlocks/lglocks: turn into functions](https://github.com/ppajda/kernel_g3/commit/e2ea03dd798a619e1ed1b3807fafac66853fd4c2)
 * [cf8ce3f lglock: remove online variants of lock](https://github.com/ppajda/kernel_g3/commit/cf8ce3f6810197ec08f8b8b26465fa0ae5127744)
 * [b6e88b3 Revert "get rid of s_files and files_lock"](https://github.com/ppajda/kernel_g3/commit/b6e88b379bdbd40b518c8a7ca6db92b4bb4e6590)
-* [a15d54d g3: remove support for sdcardfs](https://github.com/ppajda/kernel_g3/commit/a15d54d37f308113b22f12f50818d08455e81e17)
+
+***
+
+12-12-2017
+====================
+
 
 ***
 
@@ -577,7 +576,7 @@ Lineage eXTenDed Kernel los-15.1 source Changelog:
 
 ***
 
-11-24-2017
+11-25-2017
 ====================
 
 * [e01f8d7 bq5102x: remove __dev macro](https://github.com/ppajda/kernel_g3/commit/e01f8d79731428630552c926159cd207fdfdd3d6)
@@ -587,13 +586,13 @@ Lineage eXTenDed Kernel los-15.1 source Changelog:
 
 ***
 
-11-23-2017
+11-24-2017
 ====================
 
 
 ***
 
-11-22-2017
+11-23-2017
 ====================
 
 * [7b78072 Fix compile with gcc 7.x](https://github.com/ppajda/kernel_g3/commit/7b78072c2c8911cf84ac979a40e8076e6542fc05)
@@ -608,19 +607,19 @@ Lineage eXTenDed Kernel los-15.1 source Changelog:
 
 ***
 
-11-21-2017
+11-22-2017
 ====================
 
 * [545bbae msm: msm_mpdecision: disable by default at boot](https://github.com/ppajda/kernel_g3/commit/545bbaeab29129336279d4dc70f17fd985affad7)
 * [83d3cc7 msm: Fix high load average from uninterruptible waits](https://github.com/ppajda/kernel_g3/commit/83d3cc7a7a55e1c2bcf0f7092c057ad8be037674)
 * [89153ba msm: pm: Increase cpu collapse timeout](https://github.com/ppajda/kernel_g3/commit/89153ba43e08af52d97604fb769d4400aaa1c5a3)
-* [2540790 Revert "lm3697: Add state notifier"](https://github.com/ppajda/kernel_g3/commit/2540790f3a91b572249474ce1a18a437ca9ff174)
 
 ***
 
-11-20-2017
+11-21-2017
 ====================
 
+* [7484a4b Remove a whole set of __dev... macros](https://github.com/ppajda/kernel_g3/commit/7484a4bf95c8d23b455ba6ae8450e3a291cb00b9)
 * [7f0b1b3 Update msm-limiter](https://github.com/ppajda/kernel_g3/commit/7f0b1b3eab642602b634c31997a6f216b662d013)
 
 ***
@@ -628,12 +627,7 @@ Lineage eXTenDed Kernel los-15.1 source Changelog:
 11-17-2017
 ====================
 
-
-***
-
-11-16-2017
-====================
-
+* [226104e Fix derp](https://github.com/ppajda/kernel_g3/commit/226104e88d3e23e5cd4ca3b626d88682c3534eb9)
 * [65fd207 math64: Add mul_u64_u32_shr()](https://github.com/ppajda/kernel_g3/commit/65fd2073c80f3bfd515cd40b5c7793afb4a7242e)
 * [0cce04d sched/fair: Move load idx selection in find_idlest_group](https://github.com/ppajda/kernel_g3/commit/0cce04d42881d86fb2fdfb0ba6fc4a7a532dcc52)
 * [18febaf sched: Remove unnecessary iteration over sched domains to update nr_busy_cpus](https://github.com/ppajda/kernel_g3/commit/18febafc372ad858689e95e84267974a024953de)
@@ -690,16 +684,16 @@ Lineage eXTenDed Kernel los-15.1 source Changelog:
 * [94394d4 powersuspend: add backlight driver hook](https://github.com/ppajda/kernel_g3/commit/94394d46d7ca33198d83e3254ed02a1cebacc618)
 * [c5764fb LM3697: add sleep_state hook sysfs](https://github.com/ppajda/kernel_g3/commit/c5764fb9f119d744de2e6b1f4793d6dfda53bc69)
 * [7804f3f video: backlight: lm3697: Introduce backlight control](https://github.com/ppajda/kernel_g3/commit/7804f3f8e424819a558a2b9f868e241a927de0cd)
-* [3313b14 mm: change max readahead size to 128KB](https://github.com/ppajda/kernel_g3/commit/3313b14bdf7460888d4b9105d73bf91e8af7e046)
-* [05ee3b6 Fix build](https://github.com/ppajda/kernel_g3/commit/05ee3b62f2e0179deeda53bf061991f5d5dff321)
-* [ed5b1c2 Update msm_hotplug, cpu-boost, impulse gov](https://github.com/ppajda/kernel_g3/commit/ed5b1c24e3d5f9adcc2afda67dbf441eec3f605b)
-* [f297f92 Add umbrella_core gov](https://github.com/ppajda/kernel_g3/commit/f297f92a254c0e4c8f5ad5f19ce4263a3791203c)
 
 ***
 
-11-15-2017
+11-16-2017
 ====================
 
+* [05ee3b6 Fix build](https://github.com/ppajda/kernel_g3/commit/05ee3b62f2e0179deeda53bf061991f5d5dff321)
+* [ed5b1c2 Update msm_hotplug, cpu-boost, impulse gov](https://github.com/ppajda/kernel_g3/commit/ed5b1c24e3d5f9adcc2afda67dbf441eec3f605b)
+* [f297f92 Add umbrella_core gov](https://github.com/ppajda/kernel_g3/commit/f297f92a254c0e4c8f5ad5f19ce4263a3791203c)
+* [52cc8a7 Fix makefile](https://github.com/ppajda/kernel_g3/commit/52cc8a775e4db576ef9c97a5b57106da59b0d97d)
 * [c707156 cpufreq: Introduce new relation for freq selection](https://github.com/ppajda/kernel_g3/commit/c707156b02d3579d211ea3fa5e38c71b6cbfe066)
 * [5c6a064 Add nightmare, smartmax, smartmax_eps governons](https://github.com/ppajda/kernel_g3/commit/5c6a064d2967e460519582970d6320d2db1778bb)
 * [d6bb688 cpufreq_stats: sync to complete update](https://github.com/ppajda/kernel_g3/commit/d6bb68831aea27cd19d7fdd13ddf449f35dceea7)
@@ -711,691 +705,6 @@ Lineage eXTenDed Kernel los-15.1 source Changelog:
 * [a8a6496 page-writeback: Increase these numbers to help save some battery](https://github.com/ppajda/kernel_g3/commit/a8a64966991ccfd6e70dde3bd608bbf9c563365c)
 * [91ca8c7 fs/sync: Make sync() satisfy many requests with one invocation.](https://github.com/ppajda/kernel_g3/commit/91ca8c72ab620f7c2014631c8dd573e6a344c066)
 * [0bf9687 drivers/power/wakeup: add custom wakelock path](https://github.com/ppajda/kernel_g3/commit/0bf9687a8af8b1ffef36f4e58866cc71fe8ae7c8)
-* [c4aca0a arm: dtsi: Make some adjust](https://github.com/ppajda/kernel_g3/commit/c4aca0a98a771a2a215a76b3354676f64606b85c)
-
-***
-
-11-14-2017
-====================
-
-* [576f777 power: align wakeup_sources format](https://github.com/ppajda/kernel_g3/commit/576f7772a0f79e64cefa6a6cad38e2de235cf058)
-* [a4df44a PM / sleep: unregister wakeup source when disabling device wakeup](https://github.com/ppajda/kernel_g3/commit/a4df44a52702105a2573f4b90d73ff09e9d3acd6)
-* [6fc40ea PM / devfreq: correct boost devices path number](https://github.com/ppajda/kernel_g3/commit/6fc40ea7a6c1dfabb871d5b2b17c9fa6fe1c5def)
-* [9d47709 devfreq: Fix store_polling_interval](https://github.com/ppajda/kernel_g3/commit/9d47709041f1573a1ddb31a329a14793f29bb1e2)
-* [3eda79b PM / devfreq: Use max priority for state notifier](https://github.com/ppajda/kernel_g3/commit/3eda79b30544539bc810e3b274d171094558711b)
-* [07a6e35 PM / devfreq: Use reliable state notifier](https://github.com/ppajda/kernel_g3/commit/07a6e358e921556afc14712950aae85c0616822f)
-* [cbff408 PM / devfreq: Add an interface to boost devices when the screen is woken](https://github.com/ppajda/kernel_g3/commit/cbff408ff69fab89f72d9f4d3bf4e6fc1e864fde)
-* [db632c7 PM / devfreq: Add simple_ondemand to governor white list](https://github.com/ppajda/kernel_g3/commit/db632c77102c58804ccb339f5928401407616350)
-* [afa1376 PM: devfreq: Use high priority workqueue](https://github.com/ppajda/kernel_g3/commit/afa1376003a391f4a62696318b95d5fa5551a5de)
-* [82f2784 PM / devfreq: Fix incorrect type issue.](https://github.com/ppajda/kernel_g3/commit/82f278452aec24b101c377cd52d0241465e58412)
-* [2036328 PM / devfreq: Add a governor white list](https://github.com/ppajda/kernel_g3/commit/2036328df655453bb49334f159e2a46166c9f0b9)
-* [8064255 PM / devfreq: Use freq_table for available_frequencies](https://github.com/ppajda/kernel_g3/commit/8064255c67da24b1372ab2be4ce6a5c0bbe169c9)
-* [08ac03e PM / OPP: rename header to linux/pm_opp.h](https://github.com/ppajda/kernel_g3/commit/08ac03e90511556278a48d0d59cb4ad78451fa59)
-* [ecba6ba PM / OPP: rename functions to dev_pm_opp*](https://github.com/ppajda/kernel_g3/commit/ecba6baa685742d5697297e60187772760c6f174)
-* [fd0d675 cpufreq: rename index as driver_data in cpufreq_frequency_table](https://github.com/ppajda/kernel_g3/commit/fd0d675432ea1dbed658d07b8421b98b4e8887ce)
-* [47ebda1 PM / OPP: add documentation to RCU head in struct opp](https://github.com/ppajda/kernel_g3/commit/47ebda13599ccdf4e697517ddac335f222418967)
-* [05d4d94 PM / OPP: Export more symbols for module usage](https://github.com/ppajda/kernel_g3/commit/05d4d9439cc54ace7b1e8cf38bf22ed2704551d5)
-* [8218305 PM / OPP: switch exported symbols to GPL variant](https://github.com/ppajda/kernel_g3/commit/82183057aa2554cdc0e8f32d005f1714ab7a5391)
-* [2f75751 update makefile](https://github.com/ppajda/kernel_g3/commit/2f75751760cc34b608fbcae582d8c391f4404313)
-* [573a9e9 Update makefile and defconfig](https://github.com/ppajda/kernel_g3/commit/573a9e988950ed871650670760ccf510b58a7253)
-
-***
-
-11-09-2017
-====================
-
-* [7ed6c81 Disable kexec](https://github.com/ppajda/kernel_g3/commit/7ed6c8105b339fd1904bf8301d9e73c489a09923)
-* [bcd033f Merge branch 'LX.HB.1.0.0.a3' of https://gitcontainer.lan/intern/kernel into LX.HB.1.0.0.a0](https://github.com/ppajda/kernel_g3/commit/bcd033f6e361fa9c4a5d032d135b7b9671dd7e82)
-
-***
-
-11-07-2017
-====================
-
-* [9eadda5 wakeup: Expose wakeup_sources via procfs when debugfs isn't present](https://github.com/ppajda/kernel_g3/commit/9eadda5c5b06282084811333a30300c97d11918b)
-* [ac31f85 cpufreq: Make sure target freq is within limits](https://github.com/ppajda/kernel_g3/commit/ac31f85b754d5fb6aec82a5310b48faef47232ed)
-* [1c0b1f4 cpufreq: Avoid calling cpufreq driver's target() routine if target_freq == policy->cur](https://github.com/ppajda/kernel_g3/commit/1c0b1f4e1edd17ebbd04ab5fea22a35a6366a816)
-* [1f9e6b3 drivers: wakeup: don't check for display state before blocking wakeups](https://github.com/ppajda/kernel_g3/commit/1f9e6b392341ddfe3b6e0fddec73955d91ef1ad2)
-* [56fdf48 power: qpnp-charger, bq24296_charger: queue work on system_power_efficient_wq](https://github.com/ppajda/kernel_g3/commit/56fdf4896b1dfb7180631f69489c3d0cbf115186)
-* [68d6893 PM: Add watchdog to catch lockup during device resume](https://github.com/ppajda/kernel_g3/commit/68d6893c5009e15df8cf1433f8af0a19e2946c09)
-* [77ca7be arm: gic: Add missing include](https://github.com/ppajda/kernel_g3/commit/77ca7be4e7ef37249bbb0779fbc6191aed5ca998)
-* [c472611 ARM: gic: ignore non-wakeup interrupts when reporting wakeup sources](https://github.com/ppajda/kernel_g3/commit/c472611ea94f3468f77fd369a4bc7982d60acb50)
-* [f39f2cd ARM: gic: use a private mapping for CPU target interfaces](https://github.com/ppajda/kernel_g3/commit/f39f2cd9941b1da3df5fbd8d6f187908756a75a8)
-* [8c79769 PM: wakeup_reasons: disable wakeup-reason deduction by default](https://github.com/ppajda/kernel_g3/commit/8c79769e3e8d5c63b8f8b661d916951113f350ea)
-* [5cf3f6b Power: Report total suspend times from boot in suspend_since_boot](https://github.com/ppajda/kernel_g3/commit/5cf3f6b060eac318dfa123c1bfb3072afa7bca0f)
-* [b08ca801 PM: wakeup_reasons: fix race condition](https://github.com/ppajda/kernel_g3/commit/b08ca80102ed7066e99ac8aeb492621223264ae6)
-* [04814e4 PM: wakeup_reason: correctly deduce wakeup interrupts](https://github.com/ppajda/kernel_g3/commit/04814e461be08ca9d41baea41e3312ff084df06c)
-* [bf72fcb irq_flow_handler_t now returns bool](https://github.com/ppajda/kernel_g3/commit/bf72fcb2f7f79262320a311cd1353d23a9ee96a6)
-* [97fb03f PM: wakeup_reason: add check_wakeup_reason() to verify wakeup source irq](https://github.com/ppajda/kernel_g3/commit/97fb03f0d43b2edafbe02bb2aa6724652b8912e3)
-* [61b76b00 PM: wakeup_reason: add functionality to log the last suspend-abort reason.](https://github.com/ppajda/kernel_g3/commit/61b76b00e64661dabceb026f2cfc70f910e88263)
-* [e106648 PM: wakeup_reason: add functions to query and clear wakeup reasons](https://github.com/ppajda/kernel_g3/commit/e1066481ec6050d456689534c0409de6c224b22f)
-* [7d5505d Power: Report suspend times from last_suspend_time](https://github.com/ppajda/kernel_g3/commit/7d5505dbdcb7713ef32a7c65c87479031f08e318)
-* [6ea64ef Power: Changes the permission to read only for sysfs file /sys/kernel/wakeup_reasons/last_resume_reason](https://github.com/ppajda/kernel_g3/commit/6ea64ef096958a989fe3abf273809db00de0cc13)
-* [764c1b9 Power: Add guard condition for maximum wakeup reasons](https://github.com/ppajda/kernel_g3/commit/764c1b976e0ed5c6f7f81dc5551033bdd0f97623)
-* [943807e POWER: fix compile warnings in log_wakeup_reason](https://github.com/ppajda/kernel_g3/commit/943807e5db407a990b24dd1873b7d10f558cde85)
-* [da7729f Power: add an API to log wakeup reasons](https://github.com/ppajda/kernel_g3/commit/da7729f2d004f2dfe9996f32372f46254a0d1233)
-* [bd41868 drivers: wakeup: be more thorough with blocking wakelocks](https://github.com/ppajda/kernel_g3/commit/bd418688383e761c534f82ce109648dd4a117fcb)
-* [186daa8 workqueue: remove redundant timer_stats_timer_set_start_info() call](https://github.com/ppajda/kernel_g3/commit/186daa8cfbb82bc482859f209328eda45e2af87a)
-* [7b9f724 drivers: wakeup: fix merge derp](https://github.com/ppajda/kernel_g3/commit/7b9f724877d6ca65abc01f6879f17143caf9f48e)
-* [4389b11 drivers: wakeup: add options to block (un)popular battery wrecking wakelocks](https://github.com/ppajda/kernel_g3/commit/4389b1151f0b5cc43bc9ce22ce9af13e513201db)
-* [c0fb461 wakeup: Add last wake up source logging for suspend abort reason.](https://github.com/ppajda/kernel_g3/commit/c0fb46104d4cc4bb6bcd8ddc15a58568c73d6174)
-* [3a03232 power: log the last suspend abort reason.](https://github.com/ppajda/kernel_g3/commit/3a0323232025a6c632358400a3fae5b28bf7e77e)
-* [2ea5ad9 PM: Fix a bug in dpm_suspend_late()](https://github.com/ppajda/kernel_g3/commit/2ea5ad9501a80ce29b36c479a5c4f4e42ed256dc)
-* [38d0fd2 PM: Move disabling/enabling runtime PM to late suspend/early resume](https://github.com/ppajda/kernel_g3/commit/38d0fd2eb7a96be4dc63614179e275ad7a56cb56)
-* [82415e6 drivercore: Avoid adding devices without pm_ops to dpm list](https://github.com/ppajda/kernel_g3/commit/82415e6efcad3fd6d00aae45ad0e8f71676d8333)
-* [29787bf PM / Sleep: add knob for printing device resume times](https://github.com/ppajda/kernel_g3/commit/29787bfd6e067d2a2d7ecf52c5404d5ff69959f2)
-* [6b36d67 PM / Sleep: Print name of wakeup source that aborts suspend](https://github.com/ppajda/kernel_g3/commit/6b36d67cddf9fa72c657871a2fac97fd245ed8e4)
-* [ae9f3a5 prima: Import release LA.BF.1.1.3_rb1.15](https://github.com/ppajda/kernel_g3/commit/ae9f3a5981ac8726c59985291cdf8c5a83442274)
-* [f5a989f ASoC: qdsp6v2: update perf mode flag for LL capture cases](https://github.com/ppajda/kernel_g3/commit/f5a989f740fe554e8e5613aeb58986bfc9959f1d)
-* [d4b25e1 ASoC: msm: qdsp6v2: add integer overflow check](https://github.com/ppajda/kernel_g3/commit/d4b25e13f765229e10397c7dc7c718bfb751b4a0)
-* [f7313ed ASoC: msm: qdsp6v2: Move asm list init before apr registration](https://github.com/ppajda/kernel_g3/commit/f7313ed9167c2685e91465d578f274a16305f626)
-* [b0325ff ASoC: msm: qdsp6v2: Correctly free ASM no wait queue](https://github.com/ppajda/kernel_g3/commit/b0325ffb56af657ed3c203e6987603a543588fe1)
-* [407cc80 ASoC: msm: qdsp6v2: Prevent ASM callback when client freed](https://github.com/ppajda/kernel_g3/commit/407cc8068ce828319f6c022b3fbb536954adf22e)
-* [c3b4b30 ASoC: msm: qdsp6v2: clear old memhandle list when SSR happens](https://github.com/ppajda/kernel_g3/commit/c3b4b3047b14b6e92899cea657d4c03555fe0f51)
-* [fa4baf9 ASoC: msm: qdsp6v2: Initialize ASM no wait spinlock](https://github.com/ppajda/kernel_g3/commit/fa4baf9fe2b4d24e60825e5cd4c06cb6858bc396)
-
-***
-
-11-06-2017
-====================
-
-* [83a3db1 ASoC: msm: qdsp6v2: Cleanup of audio drivers](https://github.com/ppajda/kernel_g3/commit/83a3db19f4823d90634840f59f73a9ff5dde3aa3)
-* [070070e ASoC: msm: qdsp6v2: Add the matrix mixer call during ASM loopback](https://github.com/ppajda/kernel_g3/commit/070070eefe82cc6ae1cd9a773442e26eed06068f)
-* [6b5f948 [SCSI] async: introduce 'async_domain' type](https://github.com/ppajda/kernel_g3/commit/6b5f9487252caa405f9547b328af996293198403)
-* [8a0ae1a prima: Fix NULL pointer dereference in limSendP2PActionFrame()](https://github.com/ppajda/kernel_g3/commit/8a0ae1a3d3ac32d58f191a8153952c5e31df8524)
-* [d561605 workqueue: gut system_nrt[_freezable]_wq()](https://github.com/ppajda/kernel_g3/commit/d5616053093876342bf2c00cad337fd91e9c8818)
-* [a874ec2 workqueue: gut flush[_delayed]_work_sync()](https://github.com/ppajda/kernel_g3/commit/a874ec2a4ba0b2b5b9655b5950c3c925c09695cc)
-* [8f4b09d workqueue: make all workqueues non-reentrant](https://github.com/ppajda/kernel_g3/commit/8f4b09d87ff2d5903696918b4bcef0d29f95a5c7)
-* [9d2af34 workqueue: fix checkpatch issues](https://github.com/ppajda/kernel_g3/commit/9d2af34f07fe0467b72b4139009fde44e66328dd)
-* [5ac9195 workqueue: use system_highpri_wq for unbind_work](https://github.com/ppajda/kernel_g3/commit/5ac9195ba16e01d0545348a781e2817a2a501d75)
-* [b684bf3 workqueue: use system_highpri_wq for highpri workers in rebind_workers()](https://github.com/ppajda/kernel_g3/commit/b684bf36440b75aba05bfa7ff594cc1287acb980)
-* [3a9af31 workqueue: introduce system_highpri_wq](https://github.com/ppajda/kernel_g3/commit/3a9af31e1c79cde961ffe431de9f9279465dc41c)
-* [2cca87d workqueue: change value of lcpu in __queue_delayed_work_on()](https://github.com/ppajda/kernel_g3/commit/2cca87d2a7c653f10e00aec3f94c8763c5ade8a7)
-* [9ba242f workqueue: correct req_cpu in trace_workqueue_queue_work()](https://github.com/ppajda/kernel_g3/commit/9ba242fa7f02f54171f3119787b7c23b0bed5091)
-* [2f43bf7 workqueue: use enum value to set array size of pools in gcwq](https://github.com/ppajda/kernel_g3/commit/2f43bf7ff362801a51054322682fea88a771e9ef)
-* [5a4e759 workqueue: add missing wmb() in clear_work_data()](https://github.com/ppajda/kernel_g3/commit/5a4e7590dcffd46709cf60ef4b372d79709c0188)
-* [eb243ab workqueue: fix CPU binding of flush_delayed_work[_sync]()](https://github.com/ppajda/kernel_g3/commit/eb243ab92e0bdce825bc5b81c43e58e19340ba2b)
-* [0248b63 workqueue: implement mod_delayed_work[_on]()](https://github.com/ppajda/kernel_g3/commit/0248b63260f0e5d74f9070a0a36240a18145ef83)
-* [4318194 workqueue: mark a work item being canceled as such](https://github.com/ppajda/kernel_g3/commit/4318194f726738c29edd71acaac3577670c91af9)
-* [b45d065 workqueue: reorganize try_to_grab_pending() and __cancel_timer_work()](https://github.com/ppajda/kernel_g3/commit/b45d06527dc15d4bcaa96b3d3f5183eae1f09539)
-* [96ab756 workqueue: factor out __queue_delayed_work() from queue_delayed_work_on()](https://github.com/ppajda/kernel_g3/commit/96ab756f4c4bf8c99b542450ec0cf3661ecf1680)
-* [39f9ef0 workqueue: introduce WORK_OFFQ_FLAG_*](https://github.com/ppajda/kernel_g3/commit/39f9ef0cca11c496897d7fa47147fdc83eec58a0)
-* [cd76936 workqueue: move try_to_grab_pending() upwards](https://github.com/ppajda/kernel_g3/commit/cd7693665c0c293b0cb088462701c823717e935a)
-* [f14d92a workqueue: fix zero @delay handling of queue_delayed_work_on()](https://github.com/ppajda/kernel_g3/commit/f14d92a9aa54e86f13fdbf7ed0bfb155ee6e00f3)
-* [5a3b5fe workqueue: unify local CPU queueing handling](https://github.com/ppajda/kernel_g3/commit/5a3b5fea4d7a42b9ad572d4e9bd061b85b692425)
-* [85e2fdd workqueue: set delayed_work->timer function on initialization](https://github.com/ppajda/kernel_g3/commit/85e2fdd78fc302a29faf0b566ed049ae6b0a19e3)
-* [87696f1 workqueue: disable irq while manipulating PENDING](https://github.com/ppajda/kernel_g3/commit/87696f12404f49e08a5dab0c23a1cde81cf67b26)
-* [c05e2b2 workqueue: make queueing functions return bool](https://github.com/ppajda/kernel_g3/commit/c05e2b205d450885213154c2c57c2270be8b847a)
-* [ff5912d ASoC: Add backend user count checking](https://github.com/ppajda/kernel_g3/commit/ff5912dbde0a3cc5678bd43fefd839e712b6cb5b)
-* [cb1f8b0 Backport https://lists.linuxfoundation.org/pipermail/ltsi-dev/2013-December/002683.html from Kernel 3.10 workqueue: use a higher bit to give more space to actual non-internal flags](https://github.com/ppajda/kernel_g3/commit/cb1f8b0f938edff1b8f81c0e21448b035042a47d)
-* [40f2115 ASoC: msm: fix indefinite wait in compress drain](https://github.com/ppajda/kernel_g3/commit/40f2115e5279361ea7164be63b58d3ff7ea9a8d6)
-* [d6550b9 ASoC: msm: Interrupt events in compress free](https://github.com/ppajda/kernel_g3/commit/d6550b9290bc6c351cebfd2c6965f0cb8fc56a7f)
-* [406f4ac ASoC: msm: qdsp6v2: Prevent ASM callback when client freed](https://github.com/ppajda/kernel_g3/commit/406f4ac874c9b37ac97bbeb06cfdd5c8abd4a0c8)
-* [3771071 ASoC: msm: qdsp6v2: Handle additional codec specific metadata](https://github.com/ppajda/kernel_g3/commit/37710711e28b357ad306187473b6e67b848acecf)
-* [aa33111 ASoC: msm: Check the pointers before memcpy](https://github.com/ppajda/kernel_g3/commit/aa331114d72a7627db65e2e6bdf791a22b61bc47)
-* [43ae27d ASoC: msm: qdsp6v2: Fix invalid num_codecs](https://github.com/ppajda/kernel_g3/commit/43ae27d01b88b11fef069202dfe6c66a49c6b0c8)
-* [620f5a8 SoC: msm: qdsp6v2: Enable gapless for pcm offload](https://github.com/ppajda/kernel_g3/commit/620f5a8c99c2cbf8018330cf55e5a0ab4a2bea9f)
-* [a322bec ASoC: msm: qdsp6v2: add error handling on write done during partial drain](https://github.com/ppajda/kernel_g3/commit/a322bec050b03540ca2364e110b1b098c1e37d5d)
-* [88a04d2 ASoC: msm: qdsp6v2: remove flush wait queue](https://github.com/ppajda/kernel_g3/commit/88a04d257c65233a4b757f476c0d53c769b00d44)
-* [4dcd00d ASoC: msm: qdsp6v2: Fix timestamp query during gapless transition](https://github.com/ppajda/kernel_g3/commit/4dcd00d2a0df2035a152b23854d3b70db3a77b8a)
-* [b6e92ec ASoC: msm: qdsp6v2: Fix asm bitwidth for next track in gapless mode (fix)](https://github.com/ppajda/kernel_g3/commit/b6e92ec2d6c74326cbbead7cae12774a1275d929)
-* [323c404 ASoC: msm: Support multi channel volume in compressed driver](https://github.com/ppajda/kernel_g3/commit/323c404339377903201effa62cfebf93c763b090)
-* [debb734 asoc: msm: Always send correct bitwidth to backend](https://github.com/ppajda/kernel_g3/commit/debb734ab659d6af6216df125ee8cf35400eb1f9)
-* [0ea38ae ASoC: msm: qdsp6v2: set stream volume before starting it](https://github.com/ppajda/kernel_g3/commit/0ea38aec8c6a4263c1a08a5c6148a908cb6cb17a)
-* [d2e0540 ASoC: msm: qdsp6v2: Fix for cmd status overwrite](https://github.com/ppajda/kernel_g3/commit/d2e0540fedffa37bf28d6e975d37121259a550f2)
-* [b2807c9 ASoC: msm: compr: Ensure drain sequence is executed](https://github.com/ppajda/kernel_g3/commit/b2807c9d71523a2155c5c028f212c14d7dfe3470)
-* [91ca6c0 msm: compr: Use irq{save/restore} version of spinlock](https://github.com/ppajda/kernel_g3/commit/91ca6c0a1d37df45551a96980156d2808f6dce2a)
-* [046d350 ASoC: msm: Rampup volume on each start](https://github.com/ppajda/kernel_g3/commit/046d350df0dc6d18deba72f25b8fdfba8eac3d09)
-* [85b74e5 ASoC: msm: qdsp6v2: Add FLAC in compress offload path](https://github.com/ppajda/kernel_g3/commit/85b74e58732a21b7dca0358e8cf69da0ffb5e2c5)
-* [e1f37e0 ASoC: msm: qdsp6v2: Update supported sample rates](https://github.com/ppajda/kernel_g3/commit/e1f37e00fd1a98f71d5eca7d8b46701d0cedc960)
-* [d96a5d1 ASoC: compress: fix the target not going to TCXO shutdown](https://github.com/ppajda/kernel_g3/commit/d96a5d1e9210545177112b254b20a33177829010)
-* [1c8bb30 ASoC: msm: qdsp6v2: Update pcm media format block to use correct stream id](https://github.com/ppajda/kernel_g3/commit/1c8bb308564463efcabdd5f90962cecdddd5ce39)
-* [fb6f011 ASoC: msm: Fix wma pro block alignment parameter](https://github.com/ppajda/kernel_g3/commit/fb6f01150ee35edac2644e13c73d4480b14c5244)
-* [867d953 ASoC: msm: Add support for WMA DSP decode](https://github.com/ppajda/kernel_g3/commit/867d9539fd2e53eb251c134c87d39b099303e377)
-* [df4b3e4 ASoC: msm: Add MP2 decode support in compress driver](https://github.com/ppajda/kernel_g3/commit/df4b3e4085f7f5d91a20cbf5955e9244f1cd92bf)
-* [464a41c ASoC: msm: qdsp6v2: Cleanup of compress offload drivers](https://github.com/ppajda/kernel_g3/commit/464a41c7e74f19c8db8abed269838027aa8802ac)
-* [983b649 ASoC: msm: propagate the error code from the compr driver](https://github.com/ppajda/kernel_g3/commit/983b6496ef132571d6e22defdc4e106f3d23931a)
-* [b81d3de ASoC: msm: Add check for NULL pointer and buffer overflow](https://github.com/ppajda/kernel_g3/commit/b81d3de176eb31fc7696d724b717365f9378db65)
-* [92c2076 ASoC: Prevent pop_wait overwrite](https://github.com/ppajda/kernel_g3/commit/92c20765312d1c762025c60772c64bd08aae6799)
-* [c1facb5 ASoC: Cold start latency reduction](https://github.com/ppajda/kernel_g3/commit/c1facb51733364c3634fbb5d1aace9f59c2511b8)
-* [e1bb896 workqueue: reorder queueing functions so that _on() variants are on top](https://github.com/ppajda/kernel_g3/commit/e1bb896af95d259fb62d2d79c5c5b02de7ed319c)
-* [fbd1415 workqueue: fix spurious CPU locality WARN from process_one_work()](https://github.com/ppajda/kernel_g3/commit/fbd14157915966b8acb5dae106387553e986b534)
-* [e4338c0 workqueue: simplify CPU hotplug code](https://github.com/ppajda/kernel_g3/commit/e4338c02535147083401d04beacf90508e68328f)
-* [3f6ebbc workqueue: remove CPU offline trustee](https://github.com/ppajda/kernel_g3/commit/3f6ebbca10cb9a1fc0936633f43679084e17ab50)
-* [b4b246c workqueue: don't butcher idle workers on an offline CPU](https://github.com/ppajda/kernel_g3/commit/b4b246c8b957ccbde1d614db26f77e3b45870bc8)
-* [e2bc26b workqueue: reimplement CPU online rebinding to handle idle workers](https://github.com/ppajda/kernel_g3/commit/e2bc26b3ba86ad5f6f959c65b0f22d0823283c68)
-* [b9fafd6 workqueue: drop @bind from create_worker()](https://github.com/ppajda/kernel_g3/commit/b9fafd693f2f116500c0618f0c94e777ba509734)
-* [fb5c2bc workqueue: use mutex for global_cwq manager exclusion](https://github.com/ppajda/kernel_g3/commit/fb5c2bce2434721436b34fa129cba49d717aec15)
-* [97773b5 workqueue: ROGUE workers are UNBOUND workers](https://github.com/ppajda/kernel_g3/commit/97773b50e05b4f22a46513d7b5eb8546e4326f71)
-* [052aa17 workqueue: drop CPU_DYING notifier operation](https://github.com/ppajda/kernel_g3/commit/052aa1751989166b78b039f804fcfd2a6965477e)
-* [303357e workqueue: change BUG_ON() to WARN_ON()](https://github.com/ppajda/kernel_g3/commit/303357e6b1ff95277037cd365e9b82b73d6d9804)
-* [52d465d workqueue: Catch more locking problems with flush_work()](https://github.com/ppajda/kernel_g3/commit/52d465d732e396131561ef696683135f1e7f8664)
-* [63da91d kthread: kill task_get_live_kthread()](https://github.com/ppajda/kernel_g3/commit/63da91dfa3d6940b168d6324cfb38fef47961fbb)
-* [4dcd50f kthread: introduce to_live_kthread()](https://github.com/ppajda/kernel_g3/commit/4dcd50fe02b8604722fb55a06536300de9cdbf3c)
-* [339333a mdss: Change kickoff timeout to 300ms](https://github.com/ppajda/kernel_g3/commit/339333a00e9c04dfe4c35f17048d72c0b5791d03)
-* [aa202005 msm: thermal: Limit the emergency mitigation messages](https://github.com/ppajda/kernel_g3/commit/aa202005d9f850a5ec0546dd6bfd18e704801872)
-* [5ebb25e block: bfq: set IOPS mode by default with slice_idle set to 0](https://github.com/ppajda/kernel_g3/commit/5ebb25ef7e32deeb3a4d19eb991d13f993c99ec9)
-
-***
-
-11-03-2017
-====================
-
-* [17d053e deadline: Allow 0ms deadline latency, increase the read speed](https://github.com/ppajda/kernel_g3/commit/17d053e31bb7793a539b6043399572af899b3b90)
-* [04626ea devfreq: simple_ondemand: don't run the algorithm if total run time is low](https://github.com/ppajda/kernel_g3/commit/04626eaf8bd7ec7b2bc9e27122cadc2bf36744ba)
-* [efec98e PM / devfreq: fix scaling down logic for simple clock scaling](https://github.com/ppajda/kernel_g3/commit/efec98e51b5186b7e2bc2a60c4466dba21efdafe)
-* [659f7c8 PM / devfreq: Remove unused simple_ondemand governor data](https://github.com/ppajda/kernel_g3/commit/659f7c85f9cca59b0c5228be765c1a38323b62c7)
-* [d8f8401 PM: devfreq: Allow userspace configuration of simple_ondemand](https://github.com/ppajda/kernel_g3/commit/d8f8401928aafda2a7befc2d579a8f079e7707fd)
-* [a97fedd drivers: thermal: queue work on system_power_efficient_wq](https://github.com/ppajda/kernel_g3/commit/a97feddfd439b7355887532e4d05d9ebb0a156fb)
-* [b1ffaec power: bcl: queue work on system_power_efficient_wq](https://github.com/ppajda/kernel_g3/commit/b1ffaecc914325c1c0c5dda21892551e61b8e12c)
-* [50a68b1 msm: kgsl: Fix potential spin lock recursion in dispatcher](https://github.com/ppajda/kernel_g3/commit/50a68b19270c7ef827a98e3fa40499cdcdfe15ca)
-* [77d7a70 msm: kgsl: Unbind the kgsl-event workqueue](https://github.com/ppajda/kernel_g3/commit/77d7a7018b4b7629a1be3425f292d83cb320c557)
-* [852c775 msm: clock-krait: Remove spinlock in __kpss_mux_set_sel](https://github.com/ppajda/kernel_g3/commit/852c7752117989c1c29af644bdac092a0842f0a0)
-* [0f97171 msm: clock-krait: Work-around retention corner-case](https://github.com/ppajda/kernel_g3/commit/0f971710d4b3b065a9d97c65258da95db83183da)
-* [73feee1 msm: kgsl: Add missing check for alloc size](https://github.com/ppajda/kernel_g3/commit/73feee12ca59b011e232f8c2c51f091973486e91)
-* [03a4fb0 USB: gadget: f_mtp: Check endpoints in MTP r/w nodes](https://github.com/ppajda/kernel_g3/commit/03a4fb0715f7bf34314c5b5cf5a3c667d0e8c888)
-* [d4633f4 mmc: clk_scaling: Fix scale_down_in_low_wr_load sysfs return value](https://github.com/ppajda/kernel_g3/commit/d4633f4a30a576d3927ab233bafc3916c49bc36a)
-* [028c367 mmc: clk_scaling: add sysfs for avoiding scale down in write](https://github.com/ppajda/kernel_g3/commit/028c36730b2ca4a5cd71a2b9136aa2ee4514f829)
-* [22d83b9 mmc: sdio: Claim host in sdio_reset_comm()](https://github.com/ppajda/kernel_g3/commit/22d83b9c4ea389fd105250d629b700919c218995)
-* [1f19700 Revert "UPSTREAM: ppp: take reference on channels netns"](https://github.com/ppajda/kernel_g3/commit/1f1970047ff1ab9d7d09cfc63ae2cd05a287bbf8)
-* [f5be8ed mm: thp: fix SMP race condition between THP page fault and MADV_DONTNEED](https://github.com/ppajda/kernel_g3/commit/f5be8edf5c47a64195e240a82590c7f3a193c5ee)
-* [aaf000f block: cfq: accept cfq_slice_async, cfq_slice_idle and cfq_group_idle as 0 unless HZ is >= 1000](https://github.com/ppajda/kernel_g3/commit/aaf000faf6bebf6526c9664eafac8af90c592d40)
-* [620fd64e net: rmnet_data: Change the print format for addresses](https://github.com/ppajda/kernel_g3/commit/620fd64ef63dca61a569e95c9de40de9aa933268)
-* [152e241 kernel: cgroup: protect cgroup linked lists](https://github.com/ppajda/kernel_g3/commit/152e24187acc1c050bfddbdff8046adf723feddb)
-* [f598b34d sched: Fix hrtimer_cancel()/rq->lock deadlock](https://github.com/ppajda/kernel_g3/commit/f598b34dc617ea5d22936e0129e51ffce7fca675)
-* [88f2494 Revert "mm/vmscan.c: avoid possible deadlock caused by too_many_isolated()"](https://github.com/ppajda/kernel_g3/commit/88f2494a707e48edf59c44d2bf832aa374b6def6)
-* [a4967f1 msm: properly unlock mutexes](https://github.com/ppajda/kernel_g3/commit/a4967f1a3cdd0c2c7ba157e31c73ffef574dd562)
-
-***
-
-11-02-2017
-====================
-
-* [40bbe7c vm_is_stack: use for_each_thread() rather then buggy while_each_thread()](https://github.com/ppajda/kernel_g3/commit/40bbe7c890b4e3a89aa526b703d926bb840a7c25)
-* [4026217 mm: swap: fix swapcache usage for fast swap devices](https://github.com/ppajda/kernel_g3/commit/4026217706ddd9a3ec355fdd99a91184ec180677)
-* [3fcb39e mm: swap: don't delay swap free for fast swap devices](https://github.com/ppajda/kernel_g3/commit/3fcb39ece3971c940f66e8e0ac9da3890c1d1331)
-* [00eb8f6 lowmemorykiller: Don't count swap cache pages twice](https://github.com/ppajda/kernel_g3/commit/00eb8f66d223771b1f68365df2ef5af925d3a133)
-* [8124a4e Enable some configs](https://github.com/ppajda/kernel_g3/commit/8124a4e48cdf2994ff189150b7e2af8c2f73a761)
-* [f22636f ASoC: utils: initialize dummy_codec before use](https://github.com/ppajda/kernel_g3/commit/f22636f7348a5e2600a2aedfa618a9f40afab5da)
-* [4556585 decompressor: add LZ4 decompressor module](https://github.com/ppajda/kernel_g3/commit/455658515ed5179e652cc20c809a31f51da017a0)
-* [2945e51 zcache: Remove WARN_ON](https://github.com/ppajda/kernel_g3/commit/2945e51d1b0be7924bdf21195c81444c8311b9a1)
-* [9da617c1 nick kvfree() from apparmor](https://github.com/ppajda/kernel_g3/commit/9da617c121045912a6321e1cb62f51138c60b66f)
-* [fc56a9e cpu: fix section mismatch warnings with __hotcpu_register](https://github.com/ppajda/kernel_g3/commit/fc56a9ee4e2e83ec69b78d6342956ab0dd8e4ca1)
-* [2fe9c41 CPU hotplug: Provide lockless versions of callback registration functions](https://github.com/ppajda/kernel_g3/commit/2fe9c41e13f8af6a112efa8a02da768a96a74513)
-* [d0ba7d5 UPSTREAM: zram: fix possible use after free in zcomp_create()](https://github.com/ppajda/kernel_g3/commit/d0ba7d522f06c83ba04655431a12e4f966328de8)
-* [987a03b UPSTREAM: zsmalloc: fix a null pointer dereference in destroy_handle_cache()](https://github.com/ppajda/kernel_g3/commit/987a03bc5d4a6233a97a27a26635589a1f5963a0)
-* [46beb3f UPSTREAM: zram: clear disk io accounting when reset zram device](https://github.com/ppajda/kernel_g3/commit/46beb3f7be4d0a622dd4b0ced0d4516e7fa3c004)
-* [cddca36 UPSTREAM: zram: fix error return code](https://github.com/ppajda/kernel_g3/commit/cddca368086ca17ec426640d9c1249fd664ce474)
-* [5070fd1 UPSTREAM: zsmalloc: remove extra cond_resched() in __zs_compact](https://github.com/ppajda/kernel_g3/commit/5070fd121d5e30fb411ce7dc1ec9ad9ce1f621a1)
-* [cdfb80b UPSTREAM: zsmalloc: fix fatal corruption due to wrong size class selection](https://github.com/ppajda/kernel_g3/commit/cdfb80b7c9252ed76455f919a9ce54357499abc7)
-* [6284332 UPSTREAM: zsmalloc: remove unnecessary insertion/removal of zspage in compaction](https://github.com/ppajda/kernel_g3/commit/628433228e1dca94d9c0ea13efb158a72a7889f8)
-* [4a43d76 UPSTREAM: zsmalloc: micro-optimize zs_object_copy()](https://github.com/ppajda/kernel_g3/commit/4a43d76e286b228d41b5c8fcadde412afe9d58db)
-* [c985c39 UPSTREAM: zsmalloc: remove synchronize_rcu from zs_compact()](https://github.com/ppajda/kernel_g3/commit/c985c39391289ebfb35070e49cbcf7f49f3cef90)
-* [7c7f9c8 UPSTREAM: zram: deprecate zram attrs sysfs nodes](https://github.com/ppajda/kernel_g3/commit/7c7f9c8fa72353744a2127a88816160ac16ff16c)
-* [d6b6593 BACKPORT: zram: export new 'mm_stat' sysfs attrs](https://github.com/ppajda/kernel_g3/commit/d6b6593ffb4ead08f0a7313df45658c9c439b1e7)
-* [e41b487 BACKPORT: zram: export new 'io_stat' sysfs attrs](https://github.com/ppajda/kernel_g3/commit/e41b487a2edc2b763706fac5ce58b621d45ad3f4)
-* [bcb3bcf UPSTREAM: zram: describe device attrs in documentation](https://github.com/ppajda/kernel_g3/commit/bcb3bcf370e12f8939a6761e3a7fdc547daeb07d)
-* [85bfb76 UPSTREAM: zram: remove `num_migrated' device attr](https://github.com/ppajda/kernel_g3/commit/85bfb76ae792c23f842a489328eeeb11104d618d)
-* [c9bd590 UPSTREAM: mm/zsmalloc.c: fix comment for get_pages_per_zspage](https://github.com/ppajda/kernel_g3/commit/c9bd590e8b0433694cc1c69e64b02488feb08af6)
-* [69b23ef UPSTREAM: zsmalloc: zsmalloc documentation](https://github.com/ppajda/kernel_g3/commit/69b23efe1e270f5c719f18048313c4636225038f)
-* [2e5a5f3 UPSTREAM: zsmalloc: add fullness into stat](https://github.com/ppajda/kernel_g3/commit/2e5a5f348ec477025cda20a314abcaf1407ceb66)
-* [8b050b6 UPSTREAM: zsmalloc: record handle in page->private for huge object](https://github.com/ppajda/kernel_g3/commit/8b050b6a5063ba856d7e060c74f5b8a6ed43ab1d)
-* [a5c71d7 BACKPORT: zram: support compaction](https://github.com/ppajda/kernel_g3/commit/a5c71d750844246b66c7ac849b3736dd298a933b)
-* [709858d UPSTREAM: zsmalloc: adjust ZS_ALMOST_FULL](https://github.com/ppajda/kernel_g3/commit/709858d276e87f8c4ab35b7dd4a6b5d3627ffda2)
-* [bac457e UPSTREAM: zsmalloc: support compaction](https://github.com/ppajda/kernel_g3/commit/bac457e40c6aa2c963463a57f00a0a575a2133e4)
-* [03a908d UPSTREAM: zsmalloc: factor out obj_[malloc|free]](https://github.com/ppajda/kernel_g3/commit/03a908d7bded20dda2ab94bb39ba330ece26ff52)
-* [eb1e540 UPSTREAM: zsmalloc: decouple handle and object](https://github.com/ppajda/kernel_g3/commit/eb1e5402b08b84af1f5707064dd33fe76d066ccc)
-* [cdf420d UPSTREAM: zram: use proper type to update max_used_pages](https://github.com/ppajda/kernel_g3/commit/cdf420ddda3c6cf6fd7ce350999d4eaa7930f777)
-* [39bd7733 BACKPORT: mm/zsmalloc: add statistics support](https://github.com/ppajda/kernel_g3/commit/39bd7733e8568196b7ca6ce07cb406a6c626f25d)
-* [ad80280 BACKPORT: mm/zpool: add name argument to create zpool](https://github.com/ppajda/kernel_g3/commit/ad802804809b435755c5b2c8d468feb8b757626f)
-* [385bc41 UPSTREAM: zram: remove request_queue from struct zram](https://github.com/ppajda/kernel_g3/commit/385bc41dc91a8ee661a657ec96377dc103122dc8)
-* [5fea80d BACKPORT: zram: remove init_lock in zram_make_request](https://github.com/ppajda/kernel_g3/commit/5fea80dcef12e69bd62ca9bd51a7b261c3b39e20)
-* [fc6b375 UPSTREAM: zram: check bd_openers instead of bd_holders](https://github.com/ppajda/kernel_g3/commit/fc6b37503ed8bca3bc5985b0e4904493652a74ef)
-* [f9ca3a4 UPSTREAM: zram: rework reset and destroy path](https://github.com/ppajda/kernel_g3/commit/f9ca3a4d7747e3c229b22a078df7acc1dc8f143b)
-* [53efc79 UPSTREAM: zram: fix umount-reset_store-mount race condition](https://github.com/ppajda/kernel_g3/commit/53efc79e3f57d4c8ac7fac8d3702197b0bf3b327)
-* [11af8e6 UPSTREAM: zram: free meta table in zram_meta_free](https://github.com/ppajda/kernel_g3/commit/11af8e6ac7912c9ae76ae188e9c31316bbabb415)
-* [1bdd82d UPSTREAM: zram: clean up zram_meta_alloc()](https://github.com/ppajda/kernel_g3/commit/1bdd82d30608b5c83a16a29f9fb4a6819738ad0e)
-* [7ec23e0 BACKPORT: mm/zsmalloc: adjust order of functions](https://github.com/ppajda/kernel_g3/commit/7ec23e0254724c523cbc082b4ab04814b228d026)
-* [47ed345 UPSTREAM: mm/zsmalloc: allocate exactly size of struct zs_pool](https://github.com/ppajda/kernel_g3/commit/47ed345159bfd6b08f50ab1379c0d9971691cdec)
-* [b9930fb UPSTREAM: mm/zsmalloc: avoid duplicate assignment of prev_class](https://github.com/ppajda/kernel_g3/commit/b9930fb0df4f8b1a4ed52cc17f034722a9138281)
-* [852ee0b UPSTREAM: mm/zram: correct ZRAM_ZERO flag bit position](https://github.com/ppajda/kernel_g3/commit/852ee0b8df33190e794130a29e766e2b7845907b)
-* [36d01d5 UPSTREAM: mm/zsmalloc: support allocating obj with size of ZS_MAX_ALLOC_SIZE](https://github.com/ppajda/kernel_g3/commit/36d01d504d8c04e2623bec68d24a7d334953b94d)
-* [3e6ee47 UPSTREAM: zsmalloc: correct fragile [kmap|kunmap]_atomic use](https://github.com/ppajda/kernel_g3/commit/3e6ee47ed24089ccae5320fc9cd7362accd9d580)
-* [1a29352 UPSTREAM: zsmalloc: fix zs_init cpu notifier error handling](https://github.com/ppajda/kernel_g3/commit/1a29352b07bc2850899ddef60c8c1cc0b34f8a2b)
-* [de4b73e BACKPORT: zram: change parameter from vaild_io_request()](https://github.com/ppajda/kernel_g3/commit/de4b73e45162eaa59d740f3adb391dab195f5f0f)
-* [62c310f BACKPORT: zram: remove bio parameter from zram_bvec_rw()](https://github.com/ppajda/kernel_g3/commit/62c310f3a5b63d68d8e8d16d2d76f95cafc25ae7)
-* [33abb7b UPSTREAM: zsmalloc: merge size_class to reduce fragmentation](https://github.com/ppajda/kernel_g3/commit/33abb7bbc5d220f14be35acb3ca70f25ef06c3c9)
-* [6f7145b BACKPORT: zram: avoid kunmap_atomic() of a NULL pointer](https://github.com/ppajda/kernel_g3/commit/6f7145bcd8151ba693b487123327bb31240cccf4)
-* [0f822dc UPSTREAM: zram: avoid NULL pointer access in concurrent situation](https://github.com/ppajda/kernel_g3/commit/0f822dc8028b8031524fdcf22f9af386d93755e7)
-* [1d3f2a8 UPSTREAM: zsmalloc: simplify init_zspage free obj linking](https://github.com/ppajda/kernel_g3/commit/1d3f2a852987a5567f27f5178abddb78a2077d14)
-* [c85c7a9 UPSTREAM: mm/zsmalloc.c: correct comment for fullness group computation](https://github.com/ppajda/kernel_g3/commit/c85c7a93b9100a257447a611446d2299fa4396c1)
-* [1ab3a8d UPSTREAM: zram: use notify_free to account all free notifications](https://github.com/ppajda/kernel_g3/commit/1ab3a8d42e86db6d781e006d3ac28faddc84d2ca)
-* [756bf21 UPSTREAM: zram: report maximum used memory](https://github.com/ppajda/kernel_g3/commit/756bf21ffb4ca242929536153cc9c842923db747)
-* [da5bdea UPSTREAM: zram: zram memory size limitation](https://github.com/ppajda/kernel_g3/commit/da5bdeadc1bf8bdcde2eb6b7e40831e721839e5a)
-* [29b69da UPSTREAM: zsmalloc: change return value unit of zs_get_total_size_bytes](https://github.com/ppajda/kernel_g3/commit/29b69da017dca83dc9358827970978b0966086c1)
-* [d478973 UPSTREAM: zsmalloc: move pages_allocated to zs_pool](https://github.com/ppajda/kernel_g3/commit/d4789736ac1492f8f088fd4809e0817b4f3b346c)
-* [abbc099 BACKPORT: mm/zpool: use prefixed module loading](https://github.com/ppajda/kernel_g3/commit/abbc0993352b8518838cd4837b11993a7e94f2a2)
-* [d300ea5 UPSTREAM: zram: fix incorrect stat with failed_reads](https://github.com/ppajda/kernel_g3/commit/d300ea54bbb9c29d02eb8990eda9a72192108110)
-* [9f045f1 BACKPORT: mm/zpool: zbud/zsmalloc implement zpool](https://github.com/ppajda/kernel_g3/commit/9f045f1bdf33c0804e42e01d88aae41f81d81342)
-* [120eb0a BACKPORT: mm/zpool: implement common zpool api to zbud/zsmalloc](https://github.com/ppajda/kernel_g3/commit/120eb0a4348dac8c3f9e7baa6d9c2de7e1274fad)
-* [ba4464c2 BACKPORT: zram: replace global tb_lock with fine grain lock](https://github.com/ppajda/kernel_g3/commit/ba4464c261b7ee3de643c01d6f3ba47e3f4bd930)
-* [04a980f UPSTREAM: zram: use size_t instead of u16](https://github.com/ppajda/kernel_g3/commit/04a980f43215ea644ad669b78aed8e8bab75a2f1)
-* [e8a079c UPSTREAM: zram: remove unused SECTOR_SIZE define](https://github.com/ppajda/kernel_g3/commit/e8a079cf03b3d8fe347d0c92c23b5b242fa8e872)
-* [a1824b1 UPSTREAM: zram: rename struct `table' to `zram_table_entry'](https://github.com/ppajda/kernel_g3/commit/a1824b116a5fd215abe96b75d4799f39a60ebf76)
-* [6688371 UPSTREAM: zram: avoid lockdep splat by revalidate_disk](https://github.com/ppajda/kernel_g3/commit/66883718aec004da4bc93bfba27e3650a645a21e)
-* [ac43c79 UPSTREAM: zram: revalidate disk after capacity change](https://github.com/ppajda/kernel_g3/commit/ac43c79bfde1b542dc513a02870d289e9074b051)
-* [3ca35aa UPSTREAM: zsmalloc: fixup trivial zs size classes value in comments](https://github.com/ppajda/kernel_g3/commit/3ca35aa1a93db95abfa099b931b4be1d93aa896d)
-* [4f2e697 UPSTREAM: zram: correct offset usage in zram_bio_discard](https://github.com/ppajda/kernel_g3/commit/4f2e69772d3a7822cb4da67833494022225ead5f)
-* [27947d3 UPSTREAM: zram: doc fixes](https://github.com/ppajda/kernel_g3/commit/27947d35a17773b325ccc3e19fed891749889433)
-* [495865c Revert "zram: fix error return code"](https://github.com/ppajda/kernel_g3/commit/495865c4626dcb89c27fcb913b9d28989b8d18df)
-* [80363fd BACKPORT: Staging: zram: Fix variable dereferenced before check](https://github.com/ppajda/kernel_g3/commit/80363fd9e6dee83277b081fd015d5cd925b498c7)
-* [5c2c372 BACKPORT: zsmalloc: add more comment](https://github.com/ppajda/kernel_g3/commit/5c2c372c4e8782b103dfa7d654c723c579b3d01f)
-* [0a0b4f3 UPSTREAM: zsmalloc: add Kconfig for enabling page table method](https://github.com/ppajda/kernel_g3/commit/0a0b4f3f2a863c87248a78aae6358a3773775b5e)
-* [7fdccb9 BACKPORT: Staging: Fixes string split across lines in zram](https://github.com/ppajda/kernel_g3/commit/7fdccb9791f21df064d837e531ea0348c1360d94)
-* [f858a49 zram/zcomp: do not zero out zcomp private pages](https://github.com/ppajda/kernel_g3/commit/f858a4931b497fad57365c0309af2444689b8793)
-* [05cefbb zram: pass gfp from zcomp frontend to backend](https://github.com/ppajda/kernel_g3/commit/05cefbb26d4bfe8a90e292255e8b9a1d4ecc1c8a)
-* [faa54f2 zram: try vmalloc() after kmalloc()](https://github.com/ppajda/kernel_g3/commit/faa54f2724fd2da5cb32fffe601151d1eb468def)
-* [0e62e03 zram/zcomp: use GFP_NOIO to allocate streams](https://github.com/ppajda/kernel_g3/commit/0e62e033cacaced35426bcec3b1901b6019e6063)
-* [b13dbd1 zsmalloc: add maintainers](https://github.com/ppajda/kernel_g3/commit/b13dbd1a44cc5d2126c3d066e97360a423011fd1)
-* [29f3f47 MAINTAINERS: add zswap and zbud maintainer](https://github.com/ppajda/kernel_g3/commit/29f3f4794e08f7cf1782b57bd1f9fa6a05a7483a)
-* [337253e zram: fix error return code](https://github.com/ppajda/kernel_g3/commit/337253e648d7c84d923970e5857360c2d0e34b3d)
-* [756459a zram: optimize memory operations with clear_page()/copy_page()](https://github.com/ppajda/kernel_g3/commit/756459aff8ea9a5c555d5ae61104991ef445d121)
-* [11b0d99 zram: allow request end to coincide with disksize](https://github.com/ppajda/kernel_g3/commit/11b0d99cc0dc9b60b262b23e8badcae00cdac939)
-* [ae3a98b zram: support REQ_DISCARD](https://github.com/ppajda/kernel_g3/commit/ae3a98bc022fa31488dcbd600b6a658a2b95bf53)
-* [6ba197a zram: use scnprintf() in attrs show() methods](https://github.com/ppajda/kernel_g3/commit/6ba197a21b550ea164644cf4ae27c4da629049c2)
-* [c8e59e4 zram: propagate error to user](https://github.com/ppajda/kernel_g3/commit/c8e59e4dc841e1610cc01ab152cf57e060f90939)
-* [086732c zram: return error-valued pointer from zcomp_create()](https://github.com/ppajda/kernel_g3/commit/086732c32beb997c1f2cd67a3333e51f61b30754)
-* [37219fc zram: move comp allocation out of init_lock](https://github.com/ppajda/kernel_g3/commit/37219fc5bf1446c06d49202bdb1dc3bed5e06954)
-* [7c73ae4 zram: add lz4 algorithm backend](https://github.com/ppajda/kernel_g3/commit/7c73ae4127b5f8e7398865f76611323a9e3654fa)
-* [2536d7c zram: make compression algorithm selection possible](https://github.com/ppajda/kernel_g3/commit/2536d7c208ee82b2ad9e205e81e66d7d6540740e)
-* [8e1fb2b zram: add set_max_streams knob](https://github.com/ppajda/kernel_g3/commit/8e1fb2babfa29f19fa51e009a5a225472dbf924f)
-* [33224bd zram: add multi stream functionality](https://github.com/ppajda/kernel_g3/commit/33224bd5d7c0f9dfd647a8c96409dcd30a842d50)
-* [fe4516c zram: document failed_reads, failed_writes stats](https://github.com/ppajda/kernel_g3/commit/fe4516c7542372a008704ff40b50535c8d64c2a9)
-* [866c716 zram: factor out single stream compression](https://github.com/ppajda/kernel_g3/commit/866c716f1d6dbdb2def136703deb684f3f6d3cb0)
-* [25482d2 zram: use zcomp compressing backends](https://github.com/ppajda/kernel_g3/commit/25482d29821c1964c34af504357c6ddc6e1b96cb)
-* [7330c2d zram: introduce compressing backend abstraction](https://github.com/ppajda/kernel_g3/commit/7330c2d195dfbe959c60eaf3ec30baae65853529)
-* [8a150fb zram: delete zram_init_device()](https://github.com/ppajda/kernel_g3/commit/8a150fb32c7b3a258e7a8a8036bbe8ba32daac05)
-* [23ccd44 zram: move zram size warning to documentation](https://github.com/ppajda/kernel_g3/commit/23ccd445b6c5d55ebdcbee1a9f316f3c6f941f25)
-* [081df9b zram: drop not used table `count' member](https://github.com/ppajda/kernel_g3/commit/081df9b6ea661a8de3583c766edf824cba793e99)
-* [6e3ec0e zram: report failed read and write stats](https://github.com/ppajda/kernel_g3/commit/6e3ec0ebb3b4a24aacaa82fb3329c307f79875d7)
-* [62ef0b0 zram: remove zram stats code duplication](https://github.com/ppajda/kernel_g3/commit/62ef0b0fa307156ad7f68a01dce4270c493c330a)
-* [97e2722 zram: use atomic64_t for all zram stats](https://github.com/ppajda/kernel_g3/commit/97e272214e6e6e1bb112d5c891f149a73547d2bb)
-* [db98b43 zram: remove good and bad compress stats](https://github.com/ppajda/kernel_g3/commit/db98b435923aafd3f805e7a374b3f3def8c61d24)
-* [3c4795f zram: do not pass rw argument to __zram_make_request()](https://github.com/ppajda/kernel_g3/commit/3c4795f7c65d79a6f296e43790dda8e4b61411c1)
-* [c2bed58 zram: drop `init_done' struct zram member](https://github.com/ppajda/kernel_g3/commit/c2bed589b6e571e5ddf4f5a85a11601949340568)
-* [d8cf6af zram: avoid null access when fail to alloc meta](https://github.com/ppajda/kernel_g3/commit/d8cf6af6f3dbf065ce22a47907bba626b47efddf)
-* [2b7bb53 zram: remove zram->lock in read path and change it with mutex](https://github.com/ppajda/kernel_g3/commit/2b7bb5319bb2820c8fd18cb680f2014ca1cd0d54)
-* [abdd4c8 zram: remove workqueue for freeing removed pending slot](https://github.com/ppajda/kernel_g3/commit/abdd4c8c930022f19f20ee663bd6dfb17116ea74)
-* [bf1cf17 zram: introduce zram->tb_lock](https://github.com/ppajda/kernel_g3/commit/bf1cf17aa444e94959560579176fb499a6cf7903)
-* [d96a3bd zram: prevent data loss in error cases of function zram_bvec_write()](https://github.com/ppajda/kernel_g3/commit/d96a3bd398dbb193bd9aa954919dde9ba55bc866)
-* [917136d zram: use atomic operation for stat](https://github.com/ppajda/kernel_g3/commit/917136dc1c4ce784c6c0bfe8a7efc65e8ae6be09)
-* [1073fea zram: fix race between reset and flushing pending work](https://github.com/ppajda/kernel_g3/commit/1073fea2322b78fca9732a6f207f6133ab88fde7)
-* [225917a zram: add copyright](https://github.com/ppajda/kernel_g3/commit/225917ab144ed0550b260885398d4c2f23f0c66a)
-* [d40c89b zram: remove old private project comment](https://github.com/ppajda/kernel_g3/commit/d40c89bd95741ac23a52ee21f48c308714cb9b6d)
-* [615cb71 zsmalloc: Fix CPU hotplug callback registration](https://github.com/ppajda/kernel_g3/commit/615cb71e6fbdae1b89ddb30e7274bf4158c577be)
-* [2f2c4ec zsmalloc: add copyright](https://github.com/ppajda/kernel_g3/commit/2f2c4ec3f7accca989f7f05295030025dbc36966)
-* [f049139 zram: promote zram from staging](https://github.com/ppajda/kernel_g3/commit/f04913914c3aba75cf75f3d0cf58f8ec88d74862)
-* [9bac087 Staging: zram: Fix memory leak by refcount mismatch](https://github.com/ppajda/kernel_g3/commit/9bac087fba91dc1fa2429859bd1fe76ed304e021)
-* [a20542c zsmalloc: move it under mm](https://github.com/ppajda/kernel_g3/commit/a20542c8b5c566d51d3a0c401bfe380be97c7d00)
-* [c8d077b mm: vmscan: support equal reclaim for anon and file pages](https://github.com/ppajda/kernel_g3/commit/c8d077bcc303da3b88e83a5104a77791ae0b4881)
-* [a4a3629 mm: vmscan: re-use IS_ENABLED macro for ZCACHE](https://github.com/ppajda/kernel_g3/commit/a4a3629ebe1e4b16c28e1188c5f467f6ef489d58)
-* [1d46ff7 mm: Backport ZCache from QC kernel 3.18](https://github.com/ppajda/kernel_g3/commit/1d46ff7db2763fb2eea897ca6746bd897ecc8fd5)
-* [0e87389 ASoC: check for null function pointer for dummy device read/write](https://github.com/ppajda/kernel_g3/commit/0e87389d37fdc40abf30f19a47e859ff5b7fd6d2)
-* [d105694 slub: fix incorrect return type of get_any_partial()](https://github.com/ppajda/kernel_g3/commit/d105694e6da1ea915ab07a9daf6308b2a91c2a10)
-* [b66885e cpu: Handle smpboot_unpark_threads() uniformly](https://github.com/ppajda/kernel_g3/commit/b66885e00ae76e0e089f11bf5cab80895f4872b1)
-* [c4a2a33 cpu: Defer smpboot kthread unparking until CPU known to scheduler](https://github.com/ppajda/kernel_g3/commit/c4a2a33470334ed3170e89d93b0fd39bc9542c01)
-* [43bb9b2 smpboot: use kmemleak_not_leak for smpboot_thread_data](https://github.com/ppajda/kernel_g3/commit/43bb9b26b813bf1b4dca45a717e9fcdf63b4db32)
-* [dce3a36 dm-verity: run in a WQ_HIGHPRI workqueue](https://github.com/ppajda/kernel_g3/commit/dce3a36e91074c30d2c5cf4583ad65b27df11710)
-* [9aabfce msm_fb: display: Enable display debugging through mdp debugfs](https://github.com/ppajda/kernel_g3/commit/9aabfce1abb262d04ed028c1757ecdbf37df1494)
-* [fe81bb6 msm: display: Validate MDP, MDDI and HDMI debug reg offset](https://github.com/ppajda/kernel_g3/commit/fe81bb69f1b6773cf0fce5da7b67b42e528fa366)
-* [b84fa12 mm: vmscan: support complete shrinker reclaim](https://github.com/ppajda/kernel_g3/commit/b84fa12d97750861c05caa753516281c2a854192)
-* [9b1f1eb PM: don't use [delayed_]work_pending()](https://github.com/ppajda/kernel_g3/commit/9b1f1ebfd44069c73422ee664194bb29a9562cbe)
-* [a48d0f2 arm: smp: Update the topology masks before calling CPU_STARTING notifiers](https://github.com/ppajda/kernel_g3/commit/a48d0f28b7bcd359cb1988eb76b09bb8ccd025bd)
-* [e949683 fs/buffer.c: increase the buffer-head per-CPU LRU size](https://github.com/ppajda/kernel_g3/commit/e949683accb5d758376dc1d0ab21d89c854ae317)
-* [7109527 PM / QoS: Fix workqueue deadlock when using pm_qos_update_request_timeout()](https://github.com/ppajda/kernel_g3/commit/710952740e1318f62a1daf7d4becd895b75716a8)
-* [53379ba tcp: fix timing issue in CUBIC slope calculation](https://github.com/ppajda/kernel_g3/commit/53379ba650a06b2330b680a716957d8191111761)
-* [350a3f1 msm: vidc: Check for active handle before updating the QoS request](https://github.com/ppajda/kernel_g3/commit/350a3f1b9f36f8631df0ba5cfe329d3bc1470fd9)
-* [27e07f7 soc: qcom: smd: Fix SMD packet sync loss issue](https://github.com/ppajda/kernel_g3/commit/27e07f783b215449e4b3cbaedfc98c2598b1ef27)
-* [ce43750 msm: vidc: Initialize kernel space stack variables](https://github.com/ppajda/kernel_g3/commit/ce43750207018b36c2e362712e260170359f0f90)
-* [3ffe5ed mm, vmalloc: remove useless variable in vmap_block](https://github.com/ppajda/kernel_g3/commit/3ffe5ed5a1f8c6fc1ceba18c430d3259aed9aeb4)
-* [df47261 mm, vmalloc: use well-defined find_last_bit() func](https://github.com/ppajda/kernel_g3/commit/df4726167e3d9ee5f214072e25b1f00ecb1a298e)
-* [c142cbd binfmt_elf.c: use get_random_int() to fix entropy depleting](https://github.com/ppajda/kernel_g3/commit/c142cbdbf8597a6c76260eee03a1ea715a4ffdb5)
-* [d94d3a9 writeback: fix writeback cache thrashing](https://github.com/ppajda/kernel_g3/commit/d94d3a98c82ab42d19008c7f5ca7fe7acb4e90f0)
-* [31d397a mm: vmscan: If kswapd has been running too long, allow it to sleep](https://github.com/ppajda/kernel_g3/commit/31d397a0e7356684d5e2d7cef7b7beedcb4e83fd)
-* [80ddb57 CPU hotplug, writeback: Don't call writeback_set_ratelimit() too often during hotplug](https://github.com/ppajda/kernel_g3/commit/80ddb573c0e068bc58350dc9902e706d65eb2afc)
-* [51dd381 sched, smp: Correctly deal with nested sleeps](https://github.com/ppajda/kernel_g3/commit/51dd381251aba950b1557908d31047cf15ae25ef)
-* [ef931c7 sched: fix compilation](https://github.com/ppajda/kernel_g3/commit/ef931c748351030e7a910a1c9375e04124621828)
-* [8246fcf sched/fair: Improve the ->group_imb logic](https://github.com/ppajda/kernel_g3/commit/8246fcf78c5d6c5ab2c44d1911297a884fce31ae)
-* [9c90e23 sched/fair: Revert sched-domain iteration breakage](https://github.com/ppajda/kernel_g3/commit/9c90e237fa33ee7a39ca1368d8e09e34e796bbc9)
-* [3a6d0e0 sched/fair: Propagate 'struct lb_env' usage into find_busiest_group](https://github.com/ppajda/kernel_g3/commit/3a6d0e03474e23ba6d8ae111c5bc8e61fc0c7520)
-* [96824d8 sched/fair: Add some serialization to the sched_domain load-balance walk](https://github.com/ppajda/kernel_g3/commit/96824d8e41f972ab2b6ea45cc4e7db5ed040b4d2)
-* [7919af6 sched/fair: Let minimally loaded cpu balance the group](https://github.com/ppajda/kernel_g3/commit/7919af6f813f21ca544cf9899c049cf51cb953b4)
-* [068fbd8 sched: Change rq->nr_running to unsigned int](https://github.com/ppajda/kernel_g3/commit/068fbd8317fc7b3aa0b30f4923c9b961dc48917a)
-* [3b59ec7 sched: Fix hrtimer_cancel()/rq->lock deadlock](https://github.com/ppajda/kernel_g3/commit/3b59ec707545f2efbf0cb5050360f69830f2b84e)
-* [ccd1e26 sched: s/do_each_thread/for_each_process_thread/ in debug.c](https://github.com/ppajda/kernel_g3/commit/ccd1e2698054e8201057e6fc8a09246d3afa6c8c)
-* [39d0ca1 sched: s/do_each_thread/for_each_process_thread/ in core.c](https://github.com/ppajda/kernel_g3/commit/39d0ca1c8cfe917d7cf45d76fc8c16004240a4ff)
-* [43f2203 sched/fair: Avoid integer overflow](https://github.com/ppajda/kernel_g3/commit/43f2203b694452b94d8f07a9c83eff300c46ba46)
-* [228fea7 sched/core: Fix an SMP ordering race in try_to_wake_up() vs. schedule()](https://github.com/ppajda/kernel_g3/commit/228fea72566dfb105f6bee8c3dec50ef9daded55)
-* [df48aff sched/fair: rq might've been uninitialized, so fix it](https://github.com/ppajda/kernel_g3/commit/df48aff7dcdd9ec226af3197fd298eb9afcc3364)
-* [50c372b sched/balancing: Reduce the rate of needless idle load balancing](https://github.com/ppajda/kernel_g3/commit/50c372b36293e094bfe4b5a6e2584cd244b930dc)
-* [90bbac2 driver: soc: bam_dmux: Fix spinlock lock-up](https://github.com/ppajda/kernel_g3/commit/90bbac21afb3e7d4afcd776ab2716b0e79b901ce)
-* [1c39007 msm: bam_dmux: Reduce debug logs to avoid watchdog bite](https://github.com/ppajda/kernel_g3/commit/1c39007f495d353b343fc482d23ee9b871c1ece6)
-* [89045ff tty: fix memleak in alloc_pid](https://github.com/ppajda/kernel_g3/commit/89045ff3ec21cefce4e718892581c31a3810475e)
-* [7c0629b msm: kgsl: Report GPU frequency correctly in sysfs](https://github.com/ppajda/kernel_g3/commit/7c0629bf1f5744e23c69f49ba6b2de3f6de29bd7)
-* [19e751a sched/idle: Avoid spurious wakeup IPIs](https://github.com/ppajda/kernel_g3/commit/19e751a1f7cc829279cd273b914bac437ef69fff)
-* [2527d82 sched/fair: Implement fast idling of CPUs when the system is partially loaded](https://github.com/ppajda/kernel_g3/commit/2527d82763e76711a8b36107730ea04b8fdf479b)
-* [c0217b0 cpuidle: remove cross-cpu IPI by new latency request.](https://github.com/ppajda/kernel_g3/commit/c0217b0a30e358a01c6ba80714076c9cdb33e013)
-* [41b63bb ARM: make kernel oops easier to read](https://github.com/ppajda/kernel_g3/commit/41b63bb19eff0aeb4b64314dd951387f56d94ff3)
-* [d3e6515 sched: Introduce temporary FAIR_GROUP_SCHED dependency for load-tracking](https://github.com/ppajda/kernel_g3/commit/d3e6515aba85aef8f2f02c775ebfb887d1af0221)
-* [a643b3b sched: Make __update_entity_runnable_avg() fast](https://github.com/ppajda/kernel_g3/commit/a643b3bf51213d132dd1008ff706d24999d21c83)
-* [86d1edea sched: Update_cfs_shares at period edge](https://github.com/ppajda/kernel_g3/commit/86d1edeafddbea5929b95616cc74fac26a3e31c6)
-* [ec3e05e sched: Refactor update_shares_cpu() -> update_blocked_avgs()](https://github.com/ppajda/kernel_g3/commit/ec3e05e3747e473b53d2bf0a8e4df199b8852779)
-* [fe86c01 sched: Replace update_shares weight distribution with per-entity computation](https://github.com/ppajda/kernel_g3/commit/fe86c010d49125a2cf464f82da0724bd32e4300c)
-* [304d9e1 sched: Maintain runnable averages across throttled periods](https://github.com/ppajda/kernel_g3/commit/304d9e1fbbed1fc40b7292e14a0f0b0cc7d7a4f0)
-* [f835331 sched: Normalize tg load contributions against runnable time](https://github.com/ppajda/kernel_g3/commit/f835331152701b1c05f1e1df2eafc4b9eb764d82)
-* [1668c10 sched: Compute load contribution by a group entity](https://github.com/ppajda/kernel_g3/commit/1668c1046d9893bf84dec711b2eece48827a55bf)
-* [e1dce01 sched: Aggregate total task_group load](https://github.com/ppajda/kernel_g3/commit/e1dce0105d04bcc85a20f5e11212a055a5c38852)
-* [4061295 sched: Account for blocked load waking back up](https://github.com/ppajda/kernel_g3/commit/4061295f2878293f1f3fc3a1f6c59b1690847457)
-* [da65bbd sched: Add an rq migration call-back to sched_class](https://github.com/ppajda/kernel_g3/commit/da65bbd99df78cd6a8090c486753420463411e0a)
-* [8bbaeb2 sched: Maintain the load contribution of blocked entities](https://github.com/ppajda/kernel_g3/commit/8bbaeb23eefc7f4e147f34e363f148bbde7173df)
-* [2fbc820 sched: Aggregate load contributed by task entities on parenting cfs_rq](https://github.com/ppajda/kernel_g3/commit/2fbc820cc2a30d02d7586caacdaaeb095176d676)
-* [09b4a4f sched: Maintain per-rq runnable averages](https://github.com/ppajda/kernel_g3/commit/09b4a4f4426a8fdc0ea8a1d970f04b28a23d15b8)
-* [e66edb4 sched: Track the runnable average on a per-task entity basis](https://github.com/ppajda/kernel_g3/commit/e66edb444a05817ca5d52a3f1c83a1d55c1355a9)
-* [6e06ce4 Defer MMC layer resume until I/O is requested](https://github.com/ppajda/kernel_g3/commit/6e06ce461a9db720f0f324b06ed155f4084a1d5a)
-* [50f1645 mmc: block: Backport HS400 changes from 3.10](https://github.com/ppajda/kernel_g3/commit/50f164548215163b7236a6669814f9ca4cfe6ac8)
-* [1d121e1 misc: Clean up warnings](https://github.com/ppajda/kernel_g3/commit/1d121e1dc14d3bbc4b478bb673d6300a8799283e)
-* [be6224d mmc: workaround for read ahead issue](https://github.com/ppajda/kernel_g3/commit/be6224d4f8704974d7d48a05657efb0b1b4b47d9)
-
-***
-
-10-31-2017
-====================
-
-* [c075f1f mdss: move to a kthread for vsync_retire_work_handler](https://github.com/ppajda/kernel_g3/commit/c075f1ff3485bc25623ef899d95a6266a4d2ad4e)
-
-***
-
-10-26-2017
-====================
-
-* [7b991c4 Cpuboost: include sched.h](https://github.com/ppajda/kernel_g3/commit/7b991c4b967354657f2fd0e855caae0c7e29035c)
-* [b2c0a6a display: add a simple api to query the display state (on/off) at any point in time](https://github.com/ppajda/kernel_g3/commit/b2c0a6ab28c03d53ff100d1e89da6b4cd316df21)
-* [1905561 kthread: Backport queuing_blocked()](https://github.com/ppajda/kernel_g3/commit/1905561b2c92443128191be452e247bef5213dc2)
-* [8aa2b3d cpufreq: cpu-boost: don't raise min freq if the current frequency is already >= boost frequency](https://github.com/ppajda/kernel_g3/commit/8aa2b3ddf621ae477d50ecab2e2fafeeb35509c7)
-* [172117f cpufreq: cpu-boost: fix usage of non-existent wq](https://github.com/ppajda/kernel_g3/commit/172117fdfa580a5444a4ec3a7d2e7014c9335b48)
-* [878bc5e cpu-boost: Rework scheduling setup](https://github.com/ppajda/kernel_g3/commit/878bc5e5aeebfbfaf46978f7b7b92643ba20dd1c)
-* [a7a873c cpufreq: cpu-boost: export input_boost_enable to userspace](https://github.com/ppajda/kernel_g3/commit/a7a873cb1f1d4dfa62b290259e98a74b3287b3ff)
-* [c7cdb21 cpufreq: Sync on thread migration optimizations](https://github.com/ppajda/kernel_g3/commit/c7cdb2126485cc157e2eefaea6463b6a9084ea03)
-* [12a77b4 cpufreq: cpu-boost: Re-issue boosts above minimum frequency](https://github.com/ppajda/kernel_g3/commit/12a77b4c5ff5fe3e8a8cf0cd2c8855827734201c)
-* [8dbd72a cpufreq: cpu-boost: Resolve deadlock when waking up sync thread](https://github.com/ppajda/kernel_g3/commit/8dbd72a0a1d6f47143d19b039a142ade6624c87b)
-* [ffaa8f2 cpufreq: cpu-boost: Use one work to remove input boost for all CPUs](https://github.com/ppajda/kernel_g3/commit/ffaa8f2d52bd07afec1ae00c077a0554880b1319)
-* [30c358d cpufreq: cpu-boost: Support separate input_boost_freq for different CPUs](https://github.com/ppajda/kernel_g3/commit/30c358db920fce138c8706cfa0ebf387e128b330)
-
-***
-
-10-25-2017
-====================
-
-* [02d9947 Disable CPU_QUIET for now](https://github.com/ppajda/kernel_g3/commit/02d9947394c8bd4ba7a227f4a8b4c80e65701c5d)
-* [867ba03 Revert "Enable ASMP at startup and disable mpdecision"](https://github.com/ppajda/kernel_g3/commit/867ba036112cf72413d22072d8f9f8885846bec1)
-* [adb3d65 cpufreq: Fix broken uevents for cpufreq governor and cpu devices](https://github.com/ppajda/kernel_g3/commit/adb3d65eb452d83b305a573311354ae331971649)
-* [8a30948 drivers: cpufreq: Send a uevent when governor changes](https://github.com/ppajda/kernel_g3/commit/8a30948c824441fd0e3f929c22b96e75ab45599f)
-* [73e4f8d CPU: Fix sysfs cpu/online of offlined CPUs](https://github.com/ppajda/kernel_g3/commit/73e4f8d5e4c1c102cbd878afadca92a20af2ce75)
-* [b658c70 Driver core: Use generic offline/online for CPU offline/online](https://github.com/ppajda/kernel_g3/commit/b658c7055b07bca7bc1189e0c7fbd5de5a6ce0c8)
-* [7c66e02 numa, cpu hotplug: change links of CPU and node when changing node number by onlining CPU](https://github.com/ppajda/kernel_g3/commit/7c66e0243d66204927e2aa2ea6a69f396b876f27)
-* [e94d7cd ANDROID: mmc: move to a SCHED_FIFO thread](https://github.com/ppajda/kernel_g3/commit/e94d7cd16807f66193b186f9ecb690f5dfaf1222)
-* [4c91b10 Driver core: Add offline/online device operations](https://github.com/ppajda/kernel_g3/commit/4c91b1025b6a67e809d24d2702b46ca9ae474e55)
-* [4a310ee cpuquiet: Use device_{on/off}line(dev) function for up/downcore](https://github.com/ppajda/kernel_g3/commit/4a310ee141fcbf79338f2b5ad5f5470f16f66ab7)
-* [2d54b6b Enable cpu_quiet and fix build](https://github.com/ppajda/kernel_g3/commit/2d54b6b4b5e3bec23f879f4b02fb14d536d52812)
-* [55c34a9 cpuquiet:Update rqbalance for 3.4 Kernel](https://github.com/ppajda/kernel_g3/commit/55c34a9342038f16344773e028e321866f4c37b3)
-* [1df8aee CHROMIUM: sched: update the average of nr_running](https://github.com/ppajda/kernel_g3/commit/1df8aeecc12bb1b976b4233cd6d8576e9430a096)
-* [fa4071c CHROMIUM: PM / QoS: add min/max online cpus as PM QoS parameter](https://github.com/ppajda/kernel_g3/commit/fa4071cbd878307cb7aa0a7551f552dc5cbd32da)
-* [1c32722 rqbalance : ensure MAX cpu is set when storing nr_run_thresholds from userspace](https://github.com/ppajda/kernel_g3/commit/1c327222d200aaec76620a564298ced58567c8ff)
-* [198019c cpuquiet: Set max CPUs from Power and Thermal profiles](https://github.com/ppajda/kernel_g3/commit/198019c8eec67662336df7462127ebb3e6691a6b)
-* [efbb7c2 drivers: cpuquiet: enable on qcom soc](https://github.com/ppajda/kernel_g3/commit/efbb7c27d6fd4b0966c76ae7e1b4bb6d7dfb541e)
-* [748aa54 drivers: cpuquiet: update rqbalance](https://github.com/ppajda/kernel_g3/commit/748aa54bb4f48ab2872f25ac361338d7f17e1034)
-* [19f93aa drivers: cpuquiet: Add rqbalance governor](https://github.com/ppajda/kernel_g3/commit/19f93aa656f6e3565131f93a62ab889e22732799)
-* [0a7cc27 CHROMIUM: cpuquiet: Don't hold cpuquiet_lock in cpuquiet_wake_quiesce_cpu()](https://github.com/ppajda/kernel_g3/commit/0a7cc271d1819cb4a6413609e73308151b3c833b)
-* [4070b7f CHROMIUM: cpuquiet: Remove useless runnables_lock](https://github.com/ppajda/kernel_g3/commit/4070b7fea4166771cc406b05a5583a3ed888f5e5)
-* [2dc786f CHROMIUM: cpuquiet: Get rid of hotplug_timeout attr dead code](https://github.com/ppajda/kernel_g3/commit/2dc786f36fdf7bba29104c1476d72acf671d55bc)
-* [ee08ee8 CHROMIUM:cpuquiet: Get rid of CONFIG_CPU_QUIET_STATS](https://github.com/ppajda/kernel_g3/commit/ee08ee879bcbd8a037fcf7f081d44e46832129e6)
-* [ad2692b CHROMIUM:cpuquiet: Fix syntax errors for cpuquiet_(un)register_attrs()](https://github.com/ppajda/kernel_g3/commit/ad2692b2ee2b55c4f1b77716e014faf05f33cb18)
-* [7761a8e CHROMIUM:cpuquiet: Move definition of cpuquiet_lock](https://github.com/ppajda/kernel_g3/commit/7761a8e3f0d720459a5722df031f6bee0a62ef10)
-* [82c58de CHROMIUM: cpuquiet: Export min/max CPUs to userspace](https://github.com/ppajda/kernel_g3/commit/82c58de6386c441642e532e1ea9046ab80044225)
-* [73f2535 CHROMIUM: cpuquiet: Clean up CPUQUIET_STATS ifdefs in cpuquiet.c](https://github.com/ppajda/kernel_g3/commit/73f2535d8fa861fbb11431832e9e8a3d862ade17)
-* [d619125 CHROMIUM: cpuquiet: Specify cpuquiet platform info as const](https://github.com/ppajda/kernel_g3/commit/d61912540c691ebb1d418d4c7ba74543fb1f86a1)
-* [abf5437 CHROMIUM: cpuquiet: Reordering of inits/removes](https://github.com/ppajda/kernel_g3/commit/abf54371996076ce6d8df3961eb709f86cb18c9b)
-* [8aeb25a CHROMIUM: cpuquiet: Fix cpuquiet_add_dev error bug](https://github.com/ppajda/kernel_g3/commit/8aeb25a3251d163618b59499acf2c3ddaddaaf38)
-* [bb79704 CHROMIUM: cpuquiet: Update/Add documentation to cpuquiet](https://github.com/ppajda/kernel_g3/commit/bb7970419dff00f1d6c82f0730f169b2f5cd5b44)
-* [f89b2b2 CHROMIUM: cpuquiet: Update label name](https://github.com/ppajda/kernel_g3/commit/f89b2b23172fa9590627c90c4b12a2f0bebd9583)
-* [77f3033 CHROMIUM: cpuquiet: Remove useless ret variable](https://github.com/ppajda/kernel_g3/commit/77f3033f3a3d444bc545f82fed72d91cda592bcf)
-* [82e6e7e CHROMIUM: cpuquiet: Rename to HOTPLUG_TIMEOUT](https://github.com/ppajda/kernel_g3/commit/82e6e7e6f34ee5b55e41bf87f2354b1f15187bca)
-* [5d0794a CHROMIUM: cpuquiet: Move cpuquiet stats code to sysfs.c](https://github.com/ppajda/kernel_g3/commit/5d0794ac28180755880854a263303d790454dbd4)
-* [e919bb0 CHROMIUM: cpuquiet: Refactor cpuquiet wake, quiesce functions](https://github.com/ppajda/kernel_g3/commit/e919bb0db50f0b63bbe33fbfda0f73de2fe58418)
-* [4712a37 CHROMIUM: cpuquiet: Extract cpuquiet_{wake,quiesce}_cpu()](https://github.com/ppajda/kernel_g3/commit/4712a37f14171df148b096ace82753ed1850fce2)
-* [4787a60 CHROMIUM: cpuquiet: Make cpuquiet platform agnostic and tegra support](https://github.com/ppajda/kernel_g3/commit/4787a60072b9edee201086878e5facb8e0c4e9f8)
-* [6d9da44 CHROMIUM: cpuquiet: Add support for cpuquiet on X86 devices.](https://github.com/ppajda/kernel_g3/commit/6d9da44d9e270b539e81e2a938dcf09cfa5f729a)
-* [8af39aa CHROMIUM: cpuquiet: Extract non-arch specific code from cpuquiet-tegra into cpuquiet-common.c.](https://github.com/ppajda/kernel_g3/commit/8af39aa29cdac5c122f526b2cb1d767c584155d4)
-* [f9b28ee CHROMIUM: cpuquiet: Add support for arch specific sampling rate.](https://github.com/ppajda/kernel_g3/commit/f9b28ee36423c29335d0eead15fd68651f151548)
-* [b154caf CHROMIUM: cpuquiet: Expose hotplug overhead statistics.](https://github.com/ppajda/kernel_g3/commit/b154caf0d3d038205b59f531548091c441360493)
-* [9fbdbd6 CHROMIUM: cpuquiet: add Tegra driver](https://github.com/ppajda/kernel_g3/commit/9fbdbd6c1196d700a39308466b166eb17d8f060f)
-* [a02419e CHROMIUM: cpuquiet: add sysfs support](https://github.com/ppajda/kernel_g3/commit/a02419edf880b7d808b56fcd99e26bec17f4bee5)
-
-***
-
-10-24-2017
-====================
-
-* [1fe62c7 Cleanup](https://github.com/ppajda/kernel_g3/commit/1fe62c77a34a5b78b349ce1a13eacef5d75f900a)
-* [41bdc16 msm: vidc: disable debug logs](https://github.com/ppajda/kernel_g3/commit/41bdc16503ff84d085ba642d94b0278b32699dc1)
-* [0495019 msm8974-regulator.dtsi: further reduce CPU retention voltage](https://github.com/ppajda/kernel_g3/commit/04950197e7e0fde9553b3e9eb2a94c2d03f43145)
-* [e77ab6b lower GPU volt constraints a bit](https://github.com/ppajda/kernel_g3/commit/e77ab6b6f84f91843332551349214a5be92bc886)
-* [102658e  KGSL: GPU kgsl_pwrctrl.c use min pwr level as default. to reduce battery drain](https://github.com/ppajda/kernel_g3/commit/102658edb3d1c75608ae2e2e3085a770b1d088f2)
-
-***
-
-10-23-2017
-====================
-
-* [7627c01 Update defconfig](https://github.com/ppajda/kernel_g3/commit/7627c014278373e5d9925a9ee38c708dbe9bfa38)
-* [9b7fadd android: binder: add padding to binder_fd_array_object.](https://github.com/ppajda/kernel_g3/commit/9b7faddabb75fc0078a0e85a941b7e8a4cf16e39)
-* [eefc0b1 defconfigs: enable NETFILTER options](https://github.com/ppajda/kernel_g3/commit/eefc0b1bd213e821b0177a555407c78976433c1c)
-* [de01f5ba sdcardfs: fix space leak](https://github.com/ppajda/kernel_g3/commit/de01f5ba1cdd4565e05f1dc3257835280f4e29dc)
-* [48ed40c sdcardfs: minor fixes](https://github.com/ppajda/kernel_g3/commit/48ed40cac6012aa850200e52121824dfca7dff97)
-* [0791a70 ANDROID: sdcardfs: Call lower fs's revalidate](https://github.com/ppajda/kernel_g3/commit/0791a70604901e3674f912c0dcc43aae0667cf16)
-* [34f2cc8 g3: update defconfigs for O](https://github.com/ppajda/kernel_g3/commit/34f2cc8f6ed6cb0921e88dbc806b93a49ca95fd9)
-* [2f36095 /proc/pid/status: add "Seccomp" field](https://github.com/ppajda/kernel_g3/commit/2f36095d16fbbfd03aa7b519a7748549f625ac19)
-* [df4548d net: Do delayed neigh confirmation.](https://github.com/ppajda/kernel_g3/commit/df4548d8b61350cca4b76f2dc0c8f1f6f9220573)
-* [26e04e4 include/net/dst.h: neaten asterisk placement](https://github.com/ppajda/kernel_g3/commit/26e04e47c938123fc66e4b030ff351a70f71d0ab)
-* [d60bfac tcp: fix possible NULL dereference in tcp_vX_send_reset()](https://github.com/ppajda/kernel_g3/commit/d60bfacdbab3cd86f75997638269efadc6b02008)
-* [40f4d72 seccomp: Replace BUG(!spin_is_locked()) with assert_spin_lock](https://github.com/ppajda/kernel_g3/commit/40f4d72293aab5d9acab24cd0c3c76532387e488)
-* [281dcd9 seccomp: Use atomic operations that are present in kernel 3.4.](https://github.com/ppajda/kernel_g3/commit/281dcd91cc0da575d2be841fe144abeef8917776)
-* [8121c8e seccomp: implement SECCOMP_FILTER_FLAG_TSYNC](https://github.com/ppajda/kernel_g3/commit/8121c8e8b22540c72011ee7e9dd85224ef74ce98)
-* [6ba51b4 seccomp: allow mode setting across threads](https://github.com/ppajda/kernel_g3/commit/6ba51b43bddd3553d304bfdb380321b0cd940904)
-* [ccf5fbd seccomp: introduce writer locking](https://github.com/ppajda/kernel_g3/commit/ccf5fbdf31a4c0e572f0a569599e9c6de7750fe6)
-* [c1848c4 seccomp: split filter prep from check and apply](https://github.com/ppajda/kernel_g3/commit/c1848c4d5e49cee8f5cf4fca051e33178225aae4)
-* [5b69ec6 sched: move no_new_privs into new atomic flags](https://github.com/ppajda/kernel_g3/commit/5b69ec6895e3f8bff7b48284bd308a18b52d6949)
-* [974c2c1 Revert "sched: add macros to define bitops for task atomic flags"](https://github.com/ppajda/kernel_g3/commit/974c2c11a61a0d24463d697e47ce2b5c26bfab78)
-* [05281a9 Revert "cpuset: PF_SPREAD_PAGE and PF_SPREAD_SLAB should be atomic flags"](https://github.com/ppajda/kernel_g3/commit/05281a92cd6c765668f62917d6b354beb65e8eea)
-* [66fe5e8 ARM: add seccomp syscall](https://github.com/ppajda/kernel_g3/commit/66fe5e878926afe518bc6a62faff2c3a2e5cb45f)
-* [a4fd3f2 seccomp: add "seccomp" syscall](https://github.com/ppajda/kernel_g3/commit/a4fd3f2b822c5a8d308c196c17b95a5663453ee6)
-* [932d291 seccomp: split mode setting routines](https://github.com/ppajda/kernel_g3/commit/932d291032d2da04f714cbb79f048e2acb14491c)
-* [55f20bc seccomp: extract check/assign mode helpers](https://github.com/ppajda/kernel_g3/commit/55f20bc41f447449103415889cbf0f9f225b13a8)
-* [2c530d7 seccomp: create internal mode-setting function](https://github.com/ppajda/kernel_g3/commit/2c530d7c5d42591eb8ca4e9d39ad4966ff4d9b2e)
-* [7fb1d2ea MAINTAINERS: create seccomp entry](https://github.com/ppajda/kernel_g3/commit/7fb1d2ea43c1a627ce797915b573b243d1a9bcd6)
-* [d2cec34 CHROMIUM: ARM: r1->r0 for get/set arguments](https://github.com/ppajda/kernel_g3/commit/d2cec343a425233eac944f1b334aadf803afbc2f)
-* [c238a78 CHROMIUM: seccomp: set -ENOSYS if there is no tracer](https://github.com/ppajda/kernel_g3/commit/c238a784acf9ec7443cc424dc24245b486277596)
-* [261eb64 CHROMIUM: ARM: arch/arm: allow a scno of -1 to not cause a SIGILL](https://github.com/ppajda/kernel_g3/commit/261eb64882ec3d5fba60fcc9400e0f6ac5ac51be)
-* [5ab1b09 CHROMIUM: arch/arm: select HAVE_ARCH_SECCOMP_FILTER](https://github.com/ppajda/kernel_g3/commit/5ab1b09b2a8a54bf873f74e56587e32531d5da43)
-* [1561748 CHROMIUM: arch/arm: move secure_computing into trace; respect return code](https://github.com/ppajda/kernel_g3/commit/1561748f81362206b2fceb92a86f8fa7b99e40c8)
-* [ac6b27e CHROMIUM: arch/arm: add asm/syscall.h](https://github.com/ppajda/kernel_g3/commit/ac6b27efd12540aba22dbc8e62d97e304a42cdba)
-* [3c263d3 samples/seccomp: fix dependencies on arch macros](https://github.com/ppajda/kernel_g3/commit/3c263d311d7498f9e077825db4215fcc97901fec)
-* [3045cd8 seccomp: fix build warnings when there is no CONFIG_SECCOMP_FILTER](https://github.com/ppajda/kernel_g3/commit/3045cd87c53136a276e699569f862f4632fb2b5a)
-* [336bd16 seccomp: ignore secure_computing return values](https://github.com/ppajda/kernel_g3/commit/336bd16d265dd7454a4574e947f8ba11a4bb9ce0)
-* [9d8133c seccomp: use a static inline for a function stub](https://github.com/ppajda/kernel_g3/commit/9d8133c9c7960339c64baf850ff21be624a93386)
-* [ea34e5b Documentation: prctl/seccomp_filter](https://github.com/ppajda/kernel_g3/commit/ea34e5b33ae368aeca552823e69555cb5f52f684)
-* [0ea4315 Change-Id: I7c9d49079d4e18390c2d520513a4afd55e6eaa3e](https://github.com/ppajda/kernel_g3/commit/0ea4315984f287c5b1cff4b2c4127ea79a0ad73d)
-* [344a103 ptrace,seccomp: Add PTRACE_SECCOMP support](https://github.com/ppajda/kernel_g3/commit/344a103670a4fe462bbc59438910f47ec45a28ff)
-* [6d7855c seccomp: Add SECCOMP_RET_TRAP](https://github.com/ppajda/kernel_g3/commit/6d7855ccb98ed43a76d30ae0bb66478afcd63b6e)
-* [ad97592 signal, x86: add SIGSYS info and make it synchronous.](https://github.com/ppajda/kernel_g3/commit/ad975926c3ba2fea38d459bd9b34a018c6eed5fc)
-* [04be9f7 seccomp: add SECCOMP_RET_ERRNO](https://github.com/ppajda/kernel_g3/commit/04be9f7c77bf90ea1ce060770c323b8789c5d11e)
-* [1eb9929 seccomp: remove duplicated failure logging](https://github.com/ppajda/kernel_g3/commit/1eb9929283690ce48469ad2956f88f4a8e68f2b0)
-* [7017afc seccomp: add system call filtering using BPF](https://github.com/ppajda/kernel_g3/commit/7017afcb4a4b4ca6a741ed36e531e3c0d892005a)
-* [de2f08f arch/x86: add syscall_get_arch to syscall.h](https://github.com/ppajda/kernel_g3/commit/de2f08fe67c9709d9f2a70d3b49b740e27f0f227)
-* [c5e4b3d asm/syscall.h: add syscall_get_arch](https://github.com/ppajda/kernel_g3/commit/c5e4b3dc2dc6989a6d635e4da6fadddbc1bc449e)
-* [bf86c8c net/compat.c,linux/filter.h: share compat_sock_fprog](https://github.com/ppajda/kernel_g3/commit/bf86c8ce95726540d43fa93d3a87effeb8c22604)
-* [62c7035 sk_run_filter: add BPF_S_ANC_SECCOMP_LD_W](https://github.com/ppajda/kernel_g3/commit/62c703590183136f3b51a8d601543494a21aadaf)
-* [ec581dc Fix execve behavior apparmor for PR_{GET,SET}_NO_NEW_PRIVS](https://github.com/ppajda/kernel_g3/commit/ec581dc62fe1c0a3e90130c11182ffa7172dc13f)
-* [d6a7b31 Add PR_{GET,SET}_NO_NEW_PRIVS to prevent execve from granting privs](https://github.com/ppajda/kernel_g3/commit/d6a7b314419a7b9903abd33712f26b51e3aa4426)
-* [174c3a1 BACKPORT: {nl,cfg}80211: support high bitrates](https://github.com/ppajda/kernel_g3/commit/174c3a1eb5d2743c8fd1fc2ad96f6614d4694ec6)
-* [022bd37 net: core: add UID to flows, rules, and routes](https://github.com/ppajda/kernel_g3/commit/022bd37bfa941a52c63bb92b9f01b7cab608fd43)
-* [0fef6ba userns: make each net (net_ns) belong to a user_ns](https://github.com/ppajda/kernel_g3/commit/0fef6ba5a6782a41ce079ca8b80dcd3459e28ee4)
-* [8a9d35f userns: Add kuid_t and kgid_t and associated infrastructure in uidgid.h](https://github.com/ppajda/kernel_g3/commit/8a9d35f9f320783f1cb06126429a176e2bed14d4)
-* [104a46e Revert "net: core: Support UID-based routing."](https://github.com/ppajda/kernel_g3/commit/104a46e04e1f2070b19667f6372c1b74c46e63a4)
-* [49fc9d9 Revert "Handle 'sk' being NULL in UID-based routing."](https://github.com/ppajda/kernel_g3/commit/49fc9d9ff3f7497520d618ebebb5251755a70728)
-* [440e0e2 nl80211: include NL80211_ATTR_MAC in iface info](https://github.com/ppajda/kernel_g3/commit/440e0e24f451866abbab6444a590c97919d5214c)
-* [5d363a0 seccomp: kill the seccomp_t typedef](https://github.com/ppajda/kernel_g3/commit/5d363a0f12f522e5a7dc8bf84d7688df54ca9d91)
-* [a3eb36f lockdep: remove task argument from debug_check_no_locks_held](https://github.com/ppajda/kernel_g3/commit/a3eb36f264a40063a234de89927ed77a73de4b80)
-* [1528680 freezer: define try_to_freeze_nowarn if CONFIG_FREEZER=n](https://github.com/ppajda/kernel_g3/commit/15286808303007903ac5d8c4a4d94e4861004f75)
-* [54e0d01 freezer: add new freezable helpers using freezer_do_not_count()](https://github.com/ppajda/kernel_g3/commit/54e0d0111a12955df10c87d35ec2c13ccdf81200)
-* [12090ac freezer: convert freezable helpers to static inline where possible](https://github.com/ppajda/kernel_g3/commit/12090acb6506bc1d2d4e022e58d0c26ee01c5297)
-* [35969d6a freezer: convert freezable helpers to freezer_do_not_count()](https://github.com/ppajda/kernel_g3/commit/35969d6ab6deebecab7306e171d08744feef219d)
-* [34b652d6 lockdep: check that no locks held at freeze time](https://github.com/ppajda/kernel_g3/commit/34b652d68fac8d0ec1588e7de52feb7d7184ce73)
-* [487c923 freezer: add unsafe versions of freezable helpers for CIFS](https://github.com/ppajda/kernel_g3/commit/487c92334ed116cacd9e452586a086d297f6aa78)
-* [fb9165b freezer: add unsafe versions of freezable helpers for NFS](https://github.com/ppajda/kernel_g3/commit/fb9165b16cb43a7324f47566fb09ea3de1962ce0)
-* [d90c566 HACK: ARM: disable sleeping while atomic warning in do_signal](https://github.com/ppajda/kernel_g3/commit/d90c566cf7d1834886feb504c6d3e189cfff8b25)
-* [0117a36 ANDROID: binder: add hwbinder,vndbinder to BINDER_DEVICES.](https://github.com/ppajda/kernel_g3/commit/0117a364c06627786d6dac1b42f2bc5169b79868)
-* [830fcdf BACKPORT: commoncap: don't alloc the credential unless needed in cap_task_prctl](https://github.com/ppajda/kernel_g3/commit/830fcdfd7f8a5eb699ec06682d16a7425f6decd8)
-* [de1dc41 BACKPORT: security: fix typo in security_task_prctl](https://github.com/ppajda/kernel_g3/commit/de1dc4178a4162abca5c7698219c83b433c09b17)
-* [b6f5426 UPSTREAM: capabilities: ambient capabilities](https://github.com/ppajda/kernel_g3/commit/b6f542613ec6e451f609b021a9ea188f8eb3e26f)
-* [409cdc2 Add PR_{GET,SET}_NO_NEW_PRIVS to prevent execve from granting privs](https://github.com/ppajda/kernel_g3/commit/409cdc29f8e5fc30b97fafe8f6fe2d4a7b9a6194)
-* [53e3961 drivers: lpm-levels: Provide API to set wake up time from suspend](https://github.com/ppajda/kernel_g3/commit/53e3961d86cf4278d4ad0ced57bc28abf14458c1)
-* [4c82036 msm: thermal: Remove alarm support in KTM](https://github.com/ppajda/kernel_g3/commit/4c82036260772c8db827e07fa92127ca4349ce22)
-* [40c113a timerfd: support CLOCK_BOOTTIME clock](https://github.com/ppajda/kernel_g3/commit/40c113ae4929d3457217335fe2b4ff1109ed96c3)
-* [dfe0a13 timerfd: add alarm timers](https://github.com/ppajda/kernel_g3/commit/dfe0a1364c675a5b5d5d01106e6da5cf772313ad)
-* [e2dec1d Revert "HACK: time: Disable alarmtimer"](https://github.com/ppajda/kernel_g3/commit/e2dec1d1fb63c0a4e977e2d165c5c80f759b562b)
-* [5420af9 kernel: alarm: Increase power-on alarm before alarm time to 300 sec](https://github.com/ppajda/kernel_g3/commit/5420af9e3c95ac0d8ee350e776aa87f5960ec4f6)
-* [bafb770 rtc: alarm: init power_on_alarm_lock mutex in alarmtimer_rtc_timer_init](https://github.com/ppajda/kernel_g3/commit/bafb77027145b83fc15c145b2b2f65549ecece69)
-* [3313de2 staging: alarm-dev: information leak in alarm_ioctl()](https://github.com/ppajda/kernel_g3/commit/3313de2fbdcf8bfaa41ea76b327606f017a4f846)
-* [d080989 alarm : Fix the race conditions in alarm-dev.c](https://github.com/ppajda/kernel_g3/commit/d08098959ccf4b87920c857ba420eff4a108fe6d)
-* [9619282 qpnp-rtc: clear alarm register when rtc irq is disabled](https://github.com/ppajda/kernel_g3/commit/9619282b846b43203ddd940cc777e574cffb89aa)
-* [b8e3e3d rtc: alarm: Add power-on alarm feature](https://github.com/ppajda/kernel_g3/commit/b8e3e3d785c9a7c45daf3b0f730fef689eea9930)
-* [9a6d3e3 staging: alarm-dev: Refactor alarm-dev ioctl code in prep for compat_ioctl](https://github.com/ppajda/kernel_g3/commit/9a6d3e3694b550820fa6f1e53fd499e4b45f18d6)
-* [d461b49 staging: alarm-dev: Drop pre Android 1.0 _OLD ioctls](https://github.com/ppajda/kernel_g3/commit/d461b49550b84fb186a4fe2a0e790e2284fe3145)
-* [1676bfb3 staging: android-alarm: Switch from wakelocks to wakeup sources](https://github.com/ppajda/kernel_g3/commit/1676bfb37b4ff7028aa1400e5576dfbf9753c048)
-* [e2486cf rtc: alarm: Change wake-up source](https://github.com/ppajda/kernel_g3/commit/e2486cff64b42fab32abfa76e872477332112976)
-* [6f50384 alarmtimer: add verification for rtc dev in power_on_alarm_init](https://github.com/ppajda/kernel_g3/commit/6f5038451d694052366b1301ac91dc755de94904)
-* [08217df alarm: init power_on_alarm in alarm_dev_init](https://github.com/ppajda/kernel_g3/commit/08217df28e48320f9b200c2522caf8e95dce18f7)
-* [8b5fb22 - rtc: alarm: sanity check new time.](https://github.com/ppajda/kernel_g3/commit/8b5fb2232189e9d19327e01683a6520348addbc4)
-* [e78a77f Revert "rtc: alarm: set power_on_alarm again when calling alarm_resume"](https://github.com/ppajda/kernel_g3/commit/e78a77fe560377a87cb42a393c07088979d0a737)
-* [6963189 Revert "rtc:alarm: remove alarm_shutdown hook in alarm driver"](https://github.com/ppajda/kernel_g3/commit/69631896ad507160d8833d9cd4911b59a98cf880)
-* [d62a164 Revert "alarm : Fix the race conditions in alarm-dev.c"](https://github.com/ppajda/kernel_g3/commit/d62a164964764b2625ee7a32168d43656c80f277)
-* [99d359e rtc: alarm: init power_on_alarm_lock mutex in alarmtimer_rtc_timer_init](https://github.com/ppajda/kernel_g3/commit/99d359edcb3e85e9ba904249a704b8ea9e5a8044)
-* [587b814 rtc: alarm: set power_on_alarm again when calling alarmtimer_resume](https://github.com/ppajda/kernel_g3/commit/587b814487944cfcee10606d426bfb0f5a428bb8)
-* [ec455dd alarmtimer: add rtc irq support for alarm](https://github.com/ppajda/kernel_g3/commit/ec455ddace929f9b52d4fc1909420e16d7f66464)
-* [9021f78 alarmtimers: Squash upstream changes](https://github.com/ppajda/kernel_g3/commit/9021f7846160a7b3c273e300a3476b0d43abc345)
-* [abe4a4d rtc: alarm: Fix data handling issue with alarm->type](https://github.com/ppajda/kernel_g3/commit/abe4a4d0f50ec3491b8e676c177ffd22703e712a)
-* [bd8e402 alarmtimer: add alarm_expires_remaining](https://github.com/ppajda/kernel_g3/commit/bd8e402ffc46126f0876a1a06c7290fc832e9873)
-* [ec44fe3 alarmtimer: add alarm_start_relative](https://github.com/ppajda/kernel_g3/commit/ec44fe3eedaf2c2c34a6cc051cdfa03d69703532)
-* [c2c2201 alarmtimer: add alarm_forward_now](https://github.com/ppajda/kernel_g3/commit/c2c2201967accc5855561a8a74c0c75d30975e73)
-* [a92f5ae alarmtimer: add alarm_restart](https://github.com/ppajda/kernel_g3/commit/a92f5ae697e6b7e1145fcb1586508e1232723a22)
-* [168bfa4 alarmtimer: Use hrtimer per-alarm instead of per-base](https://github.com/ppajda/kernel_g3/commit/168bfa4f384a1b56edd8e74606c423975f6f7454)
-* [d960885 alarmtimer: implement minimum alarm interval for allowing suspend](https://github.com/ppajda/kernel_g3/commit/d960885ebfa6a7cb08e86ba831ada54797005708)
-* [ffe0961 binder: use group leader instead of open thread](https://github.com/ppajda/kernel_g3/commit/ffe09610c54836fb7e23f9454a1711e3b8cef9bd)
-* [4f241bb binder: don't allow mmap() by process other than proc->tsk](https://github.com/ppajda/kernel_g3/commit/4f241bb690e5bb3ee6ef324884c45da8cfca9c8e)
-* [2ac387b android: binder: support for file-descriptor arrays.](https://github.com/ppajda/kernel_g3/commit/2ac387b49b485bbdceb2f634f98e65c66d317a88)
-* [b16c485 android: binder: Fix binder_transaction with "scatter-gather"](https://github.com/ppajda/kernel_g3/commit/b16c485099a0d59f5b0783c5d711516eab36d491)
-* [6342f7b android: binder: support for scatter-gather.](https://github.com/ppajda/kernel_g3/commit/6342f7bfc535bd27eda03a01153e6f923504ab01)
-* [2e68712 android: binder: add extra size to allocator.](https://github.com/ppajda/kernel_g3/commit/2e68712dd1644c68b2f7ce513fcf84a7f87ad618)
-* [549aa52 android: binder: refactor binder_transact()](https://github.com/ppajda/kernel_g3/commit/549aa52d6fd43e2cdc563d86505f7fe0b6423022)
-* [45e6fca BACKPORT: android: binder: support multiple /dev instances.](https://github.com/ppajda/kernel_g3/commit/45e6fca84453e63fcfffdd12524b73f29c26c64f)
-* [97c2aa3 BACKPORT: android: binder: deal with contexts in debugfs.](https://github.com/ppajda/kernel_g3/commit/97c2aa397212b663e908bb548d49c840abf6ae35)
-* [d5e1f44 BACKPORT: android: binder: support multiple context managers.](https://github.com/ppajda/kernel_g3/commit/d5e1f44a01c435ea6ee7a33d9f971bf4dba9b5a2)
-* [16c2f0a android: binder: split flat_binder_object.](https://github.com/ppajda/kernel_g3/commit/16c2f0af6e2526b2a8b1176b527a4c40dcea747d)
-* [482b5b5 binder: NULL pointer reference](https://github.com/ppajda/kernel_g3/commit/482b5b5a01762b193629bc7110b04df3a2d00f41)
-* [28567f1 binder: blacklist %p kptr_restrict](https://github.com/ppajda/kernel_g3/commit/28567f118bceaa3f145603227e008bdac6506572)
-* [4bf215e staging: android: Fix typo in staging/android](https://github.com/ppajda/kernel_g3/commit/4bf215ea064a33b4b179ef99d873bc1651013e76)
-* [d7a7761 drivers: android: binder: Use __func__ in debug messages](https://github.com/ppajda/kernel_g3/commit/d7a776122421065a63028fc53b668978be7888bf)
-* [d16b32f drivers: android: binder: Remove excessive indentation](https://github.com/ppajda/kernel_g3/commit/d16b32f1a2c61dbbd4447198630f910b010c4b58)
-* [7f7aef0 drivers: android: binder: Fix code style in binder_deferred_release](https://github.com/ppajda/kernel_g3/commit/7f7aef0e5f465031d41c3eceaa6d2f7eaa39e238)
-* [a83bb6c6 Staging: android: binder: More offset validation.](https://github.com/ppajda/kernel_g3/commit/a83bb6c65d6b5cd2a35b53824c3f344c77f3f05c)
-* [8c74102 Staging: android: binder: Support concurrent 32 bit and 64 bit processes.](https://github.com/ppajda/kernel_g3/commit/8c74102c4f0246e85a7d3a72f01cfc389800a92b)
-* [ed1a81a staging: android: binder: fix ABI for 64bit Android](https://github.com/ppajda/kernel_g3/commit/ed1a81a54fd992f1fa9ac9e1ec29b07b1a4d231e)
-* [7bbbf37 Staging: android: binder: Add some missing binder_stat_br calls](https://github.com/ppajda/kernel_g3/commit/7bbbf37028ed1cb73355c0e49cf92dc46cd54f59)
-* [6c947dd drivers: staging: android: split uapi out of binder.h](https://github.com/ppajda/kernel_g3/commit/6c947dded8f6c89ce20c22db89ff86a4ab0843ed)
-* [f399b8d staging: android: binder: fix binder interface for 64bit compat layer](https://github.com/ppajda/kernel_g3/commit/f399b8d5d4adf2c3b3deb6206cfff3fdeac103eb)
-* [07fb3be staging: android: binder: replace types with portable ones](https://github.com/ppajda/kernel_g3/commit/07fb3becd20b1bf4f1e302593972d4ed6846eb19)
-* [0c676d0 staging: android: binder: fix BC_FREE_BUFFER ioctl declaration](https://github.com/ppajda/kernel_g3/commit/0c676d0efc198f88c02b976f7ea942f04e62583b)
-* [7ec7bcc staging: android: binder: fix BINDER_SET_MAX_THREADS declaration](https://github.com/ppajda/kernel_g3/commit/7ec7bccad0dcc8734b0ecf95f91e6bdb42af98f4)
-* [6bf1b01 staging: android: binder: replace IOCTL types with user-exportable types](https://github.com/ppajda/kernel_g3/commit/6bf1b018be6eda195a18834686499a8240001f89)
-* [0940739 staging: android: Avoid using camelcase in binder.h](https://github.com/ppajda/kernel_g3/commit/0940739185f0e5a04dc6529445c3f33e836e0483)
-* [fbf4875 staging: android: binder: fix sparse warnings](https://github.com/ppajda/kernel_g3/commit/fbf4875276e6fdb72f2d3e5c312f813033831a98)
-* [3c86464 Staging: android: add __user annotation in binder.c](https://github.com/ppajda/kernel_g3/commit/3c864649e4f63d73bccce832884148dff0f7215e)
-* [bcb69ba Staging: android: Mark local functions in binder.c as static](https://github.com/ppajda/kernel_g3/commit/bcb69ba4c1ba1c6c7fecd44a15dee433929cb73e)
-* [9a9a7dc staging: android: binder: fix alignment issues](https://github.com/ppajda/kernel_g3/commit/9a9a7dc09ed3ab383f4a0a4f6654519660ffd9b9)
-* [38a3b6d staging: android: binder: modify struct binder_write_read to use size_t](https://github.com/ppajda/kernel_g3/commit/38a3b6d383d00c52082283ad438b09ae8d0b98b7)
-* [451995b BACKPORT: Staging: android: binder: Fixed multi-line strings](https://github.com/ppajda/kernel_g3/commit/451995b7f79d83099020aecac3d08ee96930f0b5)
-* [4074bbc drivers: staging: android: binder.c: fix printk macros](https://github.com/ppajda/kernel_g3/commit/4074bbcb74315d51761de809d3f38a56611f4543)
-* [33e7798 Staging: android: binder: Make task_get_unused_fd_flags function static](https://github.com/ppajda/kernel_g3/commit/33e7798cbf9b51f1c18759e58145f76c98df3119)
-* [04245c2 Revert "[PATCH] Staging: android: binder: More offset validation."](https://github.com/ppajda/kernel_g3/commit/04245c221b71511569822c2d8310532b17badc91)
-* [0bea529 Staging: android: binder: Add some tracepoints](https://github.com/ppajda/kernel_g3/commit/0bea529ba1fcc8e483c7d831af9068bb4b33eaa7)
-* [3bc41b8 ANDROID: binder: Add strong ref checks](https://github.com/ppajda/kernel_g3/commit/3bc41b82c3ab15686f724de9ac9ba64e22780736)
-* [d6927ac mac80211: use constant time comparison with keys](https://github.com/ppajda/kernel_g3/commit/d6927ac85361d6cd840728344e4e9844aba89573)
-* [ab03f36 crypto: memneq - fix for archs without efficient unaligned access](https://github.com/ppajda/kernel_g3/commit/ab03f36dba3a414d4bc8997198c317d037a09df2)
-* [83cb983 crypto: more robust crypto_memneq](https://github.com/ppajda/kernel_g3/commit/83cb983b781d68c7a83c573605b309d1bcf80bee)
-* [8effd72 crypto: crypto_memneq - add equality testing of memory regions w/o timing leaks](https://github.com/ppajda/kernel_g3/commit/8effd720003b8e4f624049be45a405190ebd0737)
-* [25a8ede mac80211: accept key reinstall without changing anything](https://github.com/ppajda/kernel_g3/commit/25a8ede39de186012e6f02973acab43affde1d0c)
-* [8995605 msm: kgsl: reduce memory for mem_entry debugfs](https://github.com/ppajda/kernel_g3/commit/8995605a0ebe7cb442c4657d0591884031b9d599)
-* [5b0e5e3 msm: kgsl: Optimize the vmap step size in kgsl page allocator](https://github.com/ppajda/kernel_g3/commit/5b0e5e34bd4a9aa70f0a6317b3b1075e64f5a217)
-* [1d2a811 mm, oom: base root bonus on current usage A 3% of system memory bonus is sometimes too excessive in comparison to other processes.](https://github.com/ppajda/kernel_g3/commit/1d2a811f65e18857659f1fe14570dd36b39f0fcf)
-* [f29a3bb kconfig: disable old mcount](https://github.com/ppajda/kernel_g3/commit/f29a3bb96f3e71a6889e4154b30a539a89654962)
-* [067b4bf msm_rmnet: Kill logspam](https://github.com/ppajda/kernel_g3/commit/067b4bfcd8d23247015f974f5adc6731d14fb675)
-* [f7353378 kgsl: allocate shared memory one page at a time](https://github.com/ppajda/kernel_g3/commit/f7353378105506e461117f914404954f8fb3f49a)
-* [9153f41 lib: drop sched debug sysrq](https://github.com/ppajda/kernel_g3/commit/9153f4195a2f54cedf9a68859e6f5cc1ef3b8d80)
-* [daca692 msm: mdss: free ion memory after panel is blanked](https://github.com/ppajda/kernel_g3/commit/daca69297fa4b64e963d0cffda6f16a42a613858)
-* [9510588 kconfig: sound: default n](https://github.com/ppajda/kernel_g3/commit/951058897a7b56cefc8967c127d5a3fe6a81bffb)
-* [8b08a12 mdss: use interruptible wait](https://github.com/ppajda/kernel_g3/commit/8b08a12b3edebd5979cc929b8b69ff5344a79ae6)
-* [d8c24e64 msm: kgsl: dump a2xx](https://github.com/ppajda/kernel_g3/commit/d8c24e6485f54058a7570611b0b9bafa69e5e04a)
-* [94d0744 msm: vidc: disable tracing](https://github.com/ppajda/kernel_g3/commit/94d0744ebd667371a725037a54e8adfe80386d9b)
-* [1eb93eb defconfig: this is deprecated and no longer used](https://github.com/ppajda/kernel_g3/commit/1eb93eb906aa014714893b5ed03feb00175247e4)
-* [4711715 drivers: msm-battery: increase the polling time to 10 seconds](https://github.com/ppajda/kernel_g3/commit/4711715a4fd497fb42ba1e8ff1c79317e37230b3)
-* [22f4f0a mm: slub: remove PAGE_ALLOC_COSTLY_ORDER](https://github.com/ppajda/kernel_g3/commit/22f4f0a5e477e241c1cd4d879124a3d1256c75ce)
-* [55cd735 Remove mobicore from defconfig](https://github.com/ppajda/kernel_g3/commit/55cd735164d686810298d7d72c6f19728e08153e)
-* [28eecc3 msm: gud: Remove gud driver](https://github.com/ppajda/kernel_g3/commit/28eecc3ecd7f16467c3ee4ac0839e004c7a743ec)
-* [107c46d ecm_ipa: remove redundant code](https://github.com/ppajda/kernel_g3/commit/107c46db6f98f0235bd7b240d3deb7a41f32b655)
-* [9b9eecb Input: optimize events_per_packet count calculation](https://github.com/ppajda/kernel_g3/commit/9b9eecb60f4acbe36cef594b01d087b504e416ca)
-* [3a23ba0 msm: mdss: rotator: Remove work_busy](https://github.com/ppajda/kernel_g3/commit/3a23ba085030cb964bdc9d7f3f72907f1eca3aee)
-* [931852b msm: mdss: use interruptible wait](https://github.com/ppajda/kernel_g3/commit/931852b5e5f09af0e5bd6af918169a24fba5c7d9)
-* [f03e00f msm: vidc: disable CPU L2 cache PC during video sessions](https://github.com/ppajda/kernel_g3/commit/f03e00fb5a152b9fd3073fc5814991277cafc51a)
-* [bff0b1fc futex: update](https://github.com/ppajda/kernel_g3/commit/bff0b1fca6d3fba185d9c024db64955434cfa1e8)
-* [add6135 futexes: Increase hash table size for better performance](https://github.com/ppajda/kernel_g3/commit/add61358d4ce49d08e6204cea5b2ddd76f54a378)
-* [425e781 vfs: fix bad hashing of dentries --- Commit by Linus Torvalds --- Josef Bacik found a performance regression between 3.2 and 3.10 and narrowed it down to commit bfcfaa7 ("vfs: use 'unsigned long' accesses for dcache name comparison and hashing"). He reports:](https://github.com/ppajda/kernel_g3/commit/425e7813e9ee6062f1e3178d41c76a356e4fbb7b)
-* [05389fc msm: kgsl: gpu: now it's a high priority workqueue](https://github.com/ppajda/kernel_g3/commit/05389fc5b80dd9945db6b7e28f117f798fa1e615)
-* [3bc8775 msm: bam_dmux: increase polling time and remove panic](https://github.com/ppajda/kernel_g3/commit/3bc87752f77083926911ed248db9bb12f4e63897)
-* [4e5eebd arm: dts: increase bark/pet time](https://github.com/ppajda/kernel_g3/commit/4e5eebd848950bb1031f59819d0bbc224012e6b8)
-* [2a0e1f1 ASoC: msm: qdsp6v2: reduce debug logs](https://github.com/ppajda/kernel_g3/commit/2a0e1f1f944e5fdd4c4d8d8e71caddf8bafd7ccf)
-* [395ee2e block_dev: implement readpages() to optimize sequential read](https://github.com/ppajda/kernel_g3/commit/395ee2e2bb16bec81f73ce036d72c710290d5917)
-* [dd6a651 input: Send events one packet at a time](https://github.com/ppajda/kernel_g3/commit/dd6a651661babff3225ff228badcf4a2a14f01fb)
-* [9fe026f fs/sync.c: make sync_file_range(2) use WB_SYNC_NONE writeback](https://github.com/ppajda/kernel_g3/commit/9fe026f8115d147aedf4fad157c8edb00f1b93db)
-* [6ff9fe9 block: Reserve only one queue tag for sync IO if only 3 tags are available](https://github.com/ppajda/kernel_g3/commit/6ff9fe99861cd527a1a766170eb8e9ec95e7f401)
-* [49897a2 mmc: update revision check for newer mmc revs](https://github.com/ppajda/kernel_g3/commit/49897a2c9eaf146cc3f9208b3fa807f486e625c8)
-* [8338571 Remove SYSTEM_SUSPEND_DISK system state](https://github.com/ppajda/kernel_g3/commit/83385712a4aa3575ed028022d04b7230e8718b3a)
-* [c7a2d05 arm: vfp: later init](https://github.com/ppajda/kernel_g3/commit/c7a2d054435f774bb2a354f2b4d3ed49a304a4f7)
-* [3c1ac42 kgsl: convert some workqueues to use kthreads](https://github.com/ppajda/kernel_g3/commit/3c1ac422e4453a2656689f96e538898851d1cc00)
-* [9159cb4 econet: remove ancient bug ridden protocol](https://github.com/ppajda/kernel_g3/commit/9159cb46f42ad2ab2633c545cf15d0861b8061fe)
-* [37a9ad5 sysrq: Emergency Remount R/O in reverse order](https://github.com/ppajda/kernel_g3/commit/37a9ad583c40af0add5e5d7a6957a36646e3c694)
-* [633fb9d squash: arm: kernel: nvidia's power efficiency patches](https://github.com/ppajda/kernel_g3/commit/633fb9d322128b9f867fe520f561c3ae08160545)
-* [807b531 readahead: make context readahead more conservative](https://github.com/ppajda/kernel_g3/commit/807b5313fa4c7a7fb75eb8a8d9f4d17a6dcd2f66)
-* [91aa247 mdss: use an interruptible thread on edp to reduce loadavg](https://github.com/ppajda/kernel_g3/commit/91aa247650160a7db5921d5af30607243e7193f8)
-* [b8b53b3 arm: kconfig: enable unaligned capability for arm](https://github.com/ppajda/kernel_g3/commit/b8b53b3ad0c20543c7c27a14742b710ab90146dd)
-* [3ed84c5 ARM: 7493/1: use generic unaligned.h](https://github.com/ppajda/kernel_g3/commit/3ed84c547e69a8ecc5785f0c032e93cf7d781ebe)
-* [c3daa51 msm: mdss: prevent excessive logging after shutdown requested.](https://github.com/ppajda/kernel_g3/commit/c3daa51ffe81efd33b7dacfeb53e776456081c56)
-* [82b84f2 msm: use interruptible wait to reduce system's loadavg](https://github.com/ppajda/kernel_g3/commit/82b84f2564f45457468b41bc952a6a8a6261928e)
-* [8455bd4 added intelli thermal v2.0 credits credits anarkia1976 and faux123](https://github.com/ppajda/kernel_g3/commit/8455bd4928254f5de6d799e17df9638b6f1acafe)
-* [c645bec script update](https://github.com/ppajda/kernel_g3/commit/c645bec0246aa201233f837aee637e06e42d2f89)
-* [779c4f9 Revert "Add blu active gov"](https://github.com/ppajda/kernel_g3/commit/779c4f98e618676647b1820512f4757eb8976049)
-* [a239426 Partial commit of updated devfreq governors](https://github.com/ppajda/kernel_g3/commit/a239426776561dad9c5e8ac568e7e652898176e0)
-* [9b81461 Adding memlat and mincpubw for MSM8974](https://github.com/ppajda/kernel_g3/commit/9b81461f2c49156cb3090f633969754152bc1af8)
 
 ***
 
